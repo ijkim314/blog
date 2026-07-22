@@ -1,0 +1,466 @@
+:root {
+    --page-bg: #edf0f2;
+    --text: #25292d;
+    --muted: #64707e;
+    --hana: #00aa91;
+    --hot: #ff405b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    color: var(--text);
+    background: #dfe8e9;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+.phone-shell {
+    width: min(100%, 393px);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 17px 20px 62px;
+    background: linear-gradient(180deg, #e3eeee 0%, var(--page-bg) 43%, #eef0f2 100%);
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 21px;
+    padding: 0 14px 0 33px;
+    color: #080b0d;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cellular {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    width: 19px;
+    height: 13px;
+}
+
+.cellular i {
+    width: 3px;
+    border-radius: 2px;
+    background: #080b0d;
+}
+
+.cellular i:nth-child(1) { height: 4px; }
+.cellular i:nth-child(2) { height: 7px; }
+.cellular i:nth-child(3) { height: 10px; }
+.cellular i:nth-child(4) { height: 13px; }
+
+.wifi {
+    width: 16px;
+    height: 12px;
+    border-top: 3px solid #080b0d;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wifi::before,
+.wifi::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.wifi::before {
+    top: 1px;
+    width: 10px;
+    height: 7px;
+    border-top: 3px solid #080b0d;
+}
+
+.wifi::after {
+    top: 6px;
+    width: 4px;
+    height: 4px;
+    background: #080b0d;
+}
+
+.battery {
+    width: 24px;
+    height: 12px;
+    border: 1px solid #7b8489;
+    border-radius: 4px;
+    padding: 1px;
+    position: relative;
+}
+
+.battery::before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 8px;
+    border-radius: 2px;
+    background: #080b0d;
+}
+
+.battery::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    width: 2px;
+    height: 5px;
+    border-radius: 0 2px 2px 0;
+    background: #7b8489;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 84px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border: 0;
+    color: var(--text);
+    background: transparent;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.chevron {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #171c20;
+    border-right: 2px solid #171c20;
+    transform: rotate(45deg);
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    position: relative;
+}
+
+.close::before,
+.close::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    width: 26px;
+    height: 2px;
+    border-radius: 2px;
+    background: #0b1115;
+}
+
+.close::before { transform: rotate(45deg); }
+.close::after { transform: rotate(-45deg); }
+
+.card-list {
+    display: grid;
+    gap: 16px;
+}
+
+.notice-card {
+    min-height: 348px;
+    padding: 24px 20px 24px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 9px 13px rgba(40, 55, 60, .08);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+    padding: 0 12px;
+    border: 1px solid currentColor;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.badge-hot {
+    color: var(--hot);
+}
+
+.flame {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.badge-score {
+    color: #00a991;
+}
+
+.gauge-mini {
+    width: 14px;
+    height: 9px;
+    border: 2px solid currentColor;
+    border-bottom: 0;
+    border-radius: 14px 14px 0 0;
+    position: relative;
+}
+
+.gauge-mini::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    bottom: -1px;
+    width: 1px;
+    height: 6px;
+    background: currentColor;
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.notice-card h2 {
+    margin: 13px 0 5px;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 750;
+    letter-spacing: -.75px;
+}
+
+.notice-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: -.45px;
+}
+
+.visual {
+    display: grid;
+    place-items: center;
+    height: 145px;
+}
+
+.document-visual {
+    position: relative;
+}
+
+.document {
+    width: 63px;
+    height: 93px;
+    margin-left: 26px;
+    background: linear-gradient(135deg, #fff 0 68%, #d9d9dc 69% 100%);
+    box-shadow: 7px 8px 8px rgba(0, 0, 0, .13);
+    position: relative;
+}
+
+.document::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 29px;
+    height: 27px;
+    border-radius: 24px 0 0 0;
+    background: #f0f0f2;
+}
+
+.document i {
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin: 14px 0 -7px 10px;
+    background: #eef0f1;
+}
+
+.government-mark {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin: 26px 0 0 -86px;
+    border-radius: 50%;
+    background: #f0f2f3;
+    box-shadow: inset 0 0 0 1px #e5e7e8;
+    position: absolute;
+}
+
+.government-mark span {
+    width: 27px;
+    height: 27px;
+    border: 5px solid #073d88;
+    border-right-color: #ed1c3c;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 11px;
+    color: #fff;
+    background: var(--hana);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 650;
+    letter-spacing: -.5px;
+}
+
+.score-card {
+    min-height: 347px;
+}
+
+.score-visual {
+    height: 152px;
+}
+
+.score-dial {
+    width: 91px;
+    height: 82px;
+    border: 7px solid #e7e7e8;
+    border-radius: 50% 50% 44% 44%;
+    background:
+        radial-gradient(circle at 50% 55%, #f7f8f8 0 48%, transparent 49%),
+        conic-gradient(from 220deg, #ef4a2e 0 25%, #f1cb0a 25% 50%, #8fca13 50% 72%, transparent 72%);
+    position: relative;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .08);
+}
+
+.needle {
+    position: absolute;
+    left: 42px;
+    bottom: 27px;
+    width: 29px;
+    height: 5px;
+    border-radius: 5px;
+    background: #3b5c63;
+    transform: rotate(-37deg);
+    transform-origin: left center;
+}
+
+.needle-center {
+    position: absolute;
+    left: 38px;
+    bottom: 25px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3b5c63;
+}
+
+.wallet-visual {
+    height: 151px;
+}
+
+.wallet {
+    width: 92px;
+    height: 61px;
+    margin-top: 23px;
+    border: 2px solid #e1e3e4;
+    border-radius: 9px 9px 18px 18px;
+    background: linear-gradient(135deg, #f9fafb, #e9ebec);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.card-piece {
+    position: absolute;
+    right: -5px;
+    top: -42px;
+    width: 35px;
+    height: 54px;
+    border-radius: 3px;
+    background: linear-gradient(145deg, #02bca9, #04a890);
+    transform: rotate(-25deg);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
+}
+
+.card-piece::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 19px;
+    width: 10px;
+    height: 7px;
+    border-radius: 2px;
+    background: #f6ca45;
+}
+
+.ticket-piece {
+    position: absolute;
+    left: 16px;
+    top: -26px;
+    width: 40px;
+    height: 45px;
+    border-radius: 3px;
+    background: repeating-linear-gradient(90deg, #f05981 0 6px, #29c596 6px 12px, #f5c73f 12px 18px);
+    transform: rotate(5deg);
+}
+
+.coin {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 31px;
+    height: 31px;
+    border: 4px solid #efb625;
+    border-radius: 50%;
+    color: #009881;
+    background: #ffe17a;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.coin-one {
+    left: 27px;
+    top: -13px;
+    transform: rotate(-18deg);
+}
+
+.coin-two {
+    left: 42px;
+    top: 4px;
+    transform: scale(.78) rotate(18deg);
+}
+
+@media (max-width: 360px) {
+    .phone-shell {
+        padding-inline: 14px;
+    }
+
+    .notice-card {
+        padding-inline: 18px;
+    }
+
+    .notice-card h2 {
+        font-size: 18px;
+    }
+}
