@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Newsletter</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 0 !important;
+            outline: none !important;
+            border-collapse: collapse !important;
+            border-spacing: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+        style="border-collapse:collapse;">
+        <tr>
+            <td align="center" style="padding:24px 0;">
+                <!-- 메인 컨테이너 -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" style="
+              width:640px;
+              max-width:640px;
+              background:#ffffff;
+              border-collapse:collapse;
+            ">
+                    <!-- 헤더 배너 -->
+                    <tr>
+                        <td align="center" style="padding:0;">
+                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/logo.png"
+                                alt=""
+                                style="display:block; width:100%; max-width:640px; height:auto; border:0; outline:none; text-decoration:none;" />
+                        </td>
+                    </tr>
+
+                    <!-- 본문 패딩 래퍼 -->
+                    <tr>
+                        <td style="padding:24px 0px 40px 10px;">
+                            <!-- 인트로 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td style="padding:0 0 12px;">
+                                        <h1
+                                            style="margin:0; font-size:22px; line-height:1.3; font-weight:700; color:#222;">
+                                            여름의 시작 7월: 최신 웹 기능, 이제 실무에 사용 가이드부터 Github Actions를 이용한 배포까지
+                                        </h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 24px;">
+                                        <p style="margin:0; font-size:14px; line-height:1.6; color:#222;">
+                                            이번 뉴스레터에서는 Baseline을 기준으로 브라우저 지원 범위를 판단해 최신 HTML과 CSS 기능을
+                                            안전하게 사용하는 방법부터 GitHub Actions를 활용한 배포까지 소개합니다.<br />
+                                            (콘텐츠는 공식 문서와 해외 기술 사이트를 우선으로 선정하였습니다.)
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== 카드 섹션(2열) 공통 템플릿: table 기반 ===== -->
+
+                            <!-- 1) 카드 그룹 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://web.dev/baseline" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/001.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            BASELINE
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://web.dev/baseline" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                최신 웹 기능, 이제 사용해도 될까? Baseline으로 확인하기
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            Limited, Newly, Widely available 상태를 통해 웹 기능의 브라우저 지원 범위와
+                                            프로젝트 도입 시점을 판단하는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40scope"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/002.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            CSS
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40scope"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                복잡한 셀렉터를 줄여주는 CSS @scope
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            특정 컴포넌트 내부에만 스타일을 적용하고 과도한 명시도와 DOM 구조 의존성을 줄이는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://developer.chrome.com/docs/web-platform/view-transitions"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/003.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            VIEW TRANSITIONS
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://developer.chrome.com/docs/web-platform/view-transitions"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                페이지 전환을 부드럽게 만드는 View Transition API
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            페이지 이동이나 콘텐츠 순서 변경 시 자연스러운 화면 전환을 구현하고 동작 감소 설정에 대응하는 방법
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- 2) 카드 그룹 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://developer.chrome.com/docs/css-ui/animate-to-height-auto"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/004.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            CSS ANIMATION
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://developer.chrome.com/docs/css-ui/animate-to-height-auto"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                드디어 가능한 height: auto CSS 애니메이션
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            interpolate-size와 calc-size()를 활용해 아코디언이나 메뉴를 자연스럽게 열고 닫는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/005.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            TYPESCRIPT
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                TypeScript 7로 더 빠르게 반복 개발하기
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            Go로 새롭게 작성된 TypeScript 7을 VS Code에 점진적으로 도입해 타입 검사를 약 7배,
+                                            전체 watch 빌드를 약 4배 빠르게 개선한 과정
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://web.dev/learn/css/popover-and-dialog" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/006.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            HTML
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://web.dev/learn/css/popover-and-dialog" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                모달에는 Dialog, 툴팁에는 Popover
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            비슷해 보이지만 역할이 다른 dialog 요소와 Popover API를 비교하고 목적에 맞게 선택하는 방법
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- 3) 카드 그룹 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/007.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            HTML API
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                JavaScript 없이 요소를 제어하는 Invoker Commands
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            button의 command와 commandfor 속성으로 Dialog와 Popover를 선언적인 HTML만으로 제어하는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Using_feature_queries"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/008.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            CSS FALLBACK
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Using_feature_queries"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                최신 CSS를 안전하게 적용하는 @supports
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            기본 기능은 유지하면서 최신 브라우저에 향상된 UI를 제공하는 Feature Queries 활용 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/009.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            PERFORMANCE
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                CSS도 성능 측정이 필요합니다
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            렌더링 차단, 애니메이션, 복잡한 셀렉터와 content-visibility가 성능에 미치는 영향을 점검하는 방법
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== Resources(helps) ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:8px;">
+                                <tr>
+                                    <td style="padding:0;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:20px; background:#f5f5f5;">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Resources</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        작업에 도움이 되는 유용한 사이트를 소개합니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://fourmodes.teybannerman.com/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            Four Modes
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        AI 활용 목적을 압축, 확장, 성찰, 실행의 네 가지 모드로 나누고 상황별 원칙과 프롬프트 예시를 제공
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://www.magentaa11y.com/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            MagentaA11y
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        웹과 네이티브 UI 컴포넌트별 접근성 기준, 키보드 및 스크린 리더 테스트 절차와 코드 예시를 제공
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://oklch.fyi/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            oklch.fyi
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        OKLCH 색상을 생성하고 변환하며 팔레트, 그라디언트와 색 영역을 시각적으로 확인할 수 있는 도구
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://nikolai-shabalin.github.io/css-properties/ko/"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            CSS Properties
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        CSS 속성의 등장 시기와 관련 명세, 공식 문서 및 브라우저 지원 정보를 연도별로 탐색할 수 있는 레퍼런스
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== YouTube 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:35px; padding-right:12px;">
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/logo-youtube.png"
+                                                        alt=""
+                                                        style="display:block; width:35px; height:auto; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        youtube code</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        실무 관점에서 바로 적용할 수 있는 인사이트 영상
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://www.w3.org/2024/09/TPAC/demo-baseline.html"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            최신 웹 기능의 사용 가능 시점을 판단하는 Baseline 활용법
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://www.youtube.com/results?search_query=Naming+things+just+got+easier+thanks+to+%40scope+Kevin+Powell"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            복잡한 선택자와 명시도 문제를 줄이는 CSS @scope 실전 활용법
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://www.youtube.com/watch?v=JN-nme9oF10"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            interpolate-size로 height: auto를 자연스럽게 애니메이션하기
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://youtu.be/quvE1uu1f_I" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            여러 페이지 사이의 화면 전환을 구현하는 View Transition API
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== Codepen 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:35px; padding-right:12px;">
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/logo-codepen.png"
+                                                        alt="CodePen"
+                                                        style="display:block; width:35px; height:auto; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Codepen code</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        아이디어를 코드로 확인하는 CodePen 데모
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://codepen.io/collection/eYGvOQ?cursor=eyJwYWdlIjo1fQ=="
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            다양한 랜딩 페이지 디자인을 모아본 CodePen 챌린지
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/PavelLaptev/pen/019cf895-57da-782e-b966-e4f3865a0c31"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            View Transition API로 테마 전환을 부드럽게 구현한 데모
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://codepen.io/yisi/pen/NPRLEQN" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            CSS polygon()으로 둥근 다각형을 구현하는 원리
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/PavelLaptev/pen/019ce242-f58d-712d-830a-a08368b0963b"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            HTML dialog 요소와 showModal()로 모달 구현하기
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/PavelLaptev/pen/019ce20c-5d5b-736c-b883-13a023938b43"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            HTML Popover API로 간단한 메뉴 구현하기
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== 에디터 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:50px; padding-right:12px;">
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/character.png"
+                                                        alt="Editor avatar"
+                                                        style="display:block; width:50px; height:50px; border-radius:50%; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Kim's Focus</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        편집자가 현재 고민하고 있는 소소한 내용을 공유합니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <h3 style="margin:0 0 10px; font-size:16px; font-weight:700; color:#222;">
+                                            GitHub Actions로 React 프로젝트 자동 배포하기
+                                        </h3>
+
+                                        <div style="font-size:13px; line-height:1.7; color:#333;">
+                                            <p style="margin:0 0 12px;">
+                                                개발 결과물을 배포하고, 접속 URL을 공유하는 방법에 대해 얘기하려고 합니다.<br />
+                                                vite 환경 기준 개인 프로젝트에서는 <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>를 사용했지만, 이번에는 GitHub Actions와 GitHub Pages를
+                                                연결해 보기로 했습니다. 코드를 GitHub에 올리면 빌드와 배포가 자동으로 실행되므로 더 빠르고
+                                                일관되게 결과물을 공유할 수 있습니다.
+                                            </p>
+
+                                            <p style="margin:0 0 8px; font-weight:700; color:#222;">
+                                                설정 과정은 다음과 같습니다.
+                                            </p>
+
+                                            <ol style="margin:0 0 12px; padding-left:20px;">
+                                                <li style="margin-bottom:8px;">
+                                                    <strong>패키지 매니저와 의존성 설치 방식 통일</strong><br />
+                                                    저장소의 잠금 파일에 맞는 명령어를 사용합니다. <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">package-lock.json</code>이
+                                                    있다면 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">npm i</code>,
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">yarn.lock</code>이
+                                                    있다면 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">yarn
+                                                        i</code>을 사용합니다.
+                                                </li>
+                                                <li style="margin-bottom:8px;">
+                                                    <strong>GitHub Pages 배포 방식 선택</strong><br />
+                                                    저장소의 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">Settings
+                                                        → Pages</code>로 이동한 뒤, Build and deployment의 Source를 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">GitHub
+                                                        Actions</code>로 선택합니다.
+                                                </li>
+                                                <li style="margin-bottom:8px;">
+                                                    <strong>GitHub Actions 워크플로 작성</strong><br />
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">.github/workflows/deploy.yml</code>
+                                                    파일을 만들고 체크아웃, Node.js 설정, 의존성 설치, 빌드 순서로 작업을 구성합니다. 빌드가 끝나면
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">dist</code>
+                                                    폴더를 Pages 아티팩트로 업로드한 뒤 배포합니다.<br />이 부분은 AI 이용하면 쉽게 작성이 가능합니다.
+                                                </li>
+                                                <li style="margin-bottom:8px;">
+                                                    <strong>빌드 명령어 설정</strong><br />
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">package.json</code>의
+                                                    scripts에 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">"build":
+                                                        "tsc -b &amp;&amp; vite build --mode production"</code>을 추가합니다.
+                                                    워크플로에서는 선택한
+                                                    패키지 매니저에 맞춰 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">npm
+                                                        run build</code> 또는 <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">yarn
+                                                        build</code>를 실행합니다.
+                                                </li>
+                                                <li style="margin-bottom:8px;">
+                                                    <strong>배포 경로 지정</strong><br />
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">vite.config.ts</code>에서
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">base:
+                                                        "/clims-fe/"</code>로 설정해 GitHub Pages의 저장소 경로와 맞춥니다. 이 값은
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">https://사용자명.github.io/clims-fe/</code>처럼
+                                                    하위 경로에 배포할 때 필요합니다. 사용자 사이트나 사용자 지정 도메인에 배포한다면 기본값인
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; background:#f3f4f6; padding:1px 4px;">/</code>를
+                                                    사용합니다.
+                                                </li>
+                                                <li>
+                                                    <strong>배포 결과 확인</strong><br />
+                                                    GitHub의 Actions 탭에서 워크플로가 성공했는지 확인한 뒤, Pages 화면에 표시된 URL로
+                                                    접속해 최종 결과를 점검합니다.
+                                                </li>
+                                            </ol>
+
+                                            <div
+                                                style="margin:0 0 12px; padding:10px 12px; background:#f6f8fa; border-left:3px solid #2f81f7; color:#333;">
+                                                <strong style="color:#222;">배포 전에 꼭 확인하세요</strong><br />
+                                                GitHub Actions는 기본적으로 GitHub Pages에 파일을 배포할 권한이 없습니다. 따라서 워크플로
+                                                파일에 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">pages: write</code>와
+                                                <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">id-token: write</code>를
+                                                설정해야 합니다.<br />
+                                                <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">pages: write</code>는
+                                                빌드 결과물을 GitHub Pages에 올릴 수 있는 권한이고, <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">id-token: write</code>는
+                                                GitHub가 허용된 워크플로의 배포 요청인지 확인할 때 사용하는 권한입니다. 이 설정이 빠지면 빌드는
+                                                성공해도 배포 단계에서 실패할 수 있습니다.<br /><br />
+                                                이 권한은 프로젝트 루트의 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">.github/workflows/deploy.yml</code>
+                                                파일에서 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">jobs</code>와
+                                                같은 최상위
+                                                위치에 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">permissions</code>
+                                                항목으로
+                                                추가합니다. 저장소의 코드를 가져오는 데 필요한 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">contents: read</code>도
+                                                함께
+                                                설정합니다.<br />
+                                                <div
+                                                    style="margin:8px 0 12px; padding:8px 10px; background:#fff; border:1px solid #e1e4e8;">
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; line-height:1.6; color:#222;">
+                                                        permissions:<br />
+                                                        &nbsp;&nbsp;contents: read<br />
+                                                        &nbsp;&nbsp;pages: write<br />
+                                                        &nbsp;&nbsp;id-token: write
+                                                    </code>
+                                                </div>
+                                                빌드와 배포를 서로 다른 작업(job)으로 나눴다면 배포 작업에 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">needs: build</code>도
+                                                추가합니다. 이는 “빌드가 성공한 뒤에 배포를 시작하라”는 의미입니다. 빌드와 배포를 하나의 작업에서
+                                                순서대로 실행한다면 이 설정은 필요하지 않습니다. <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">needs: build</code>는
+                                                아래처럼
+                                                <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">deploy</code>
+                                                작업 안에서 <code
+                                                    style="font-family:Consolas, Monaco, monospace; font-size:12px;">runs-on</code>과
+                                                같은 들여쓰기
+                                                위치에 작성합니다.
+                                                <div
+                                                    style="margin:8px 0 0; padding:8px 10px; background:#fff; border:1px solid #e1e4e8;">
+                                                    <code
+                                                        style="font-family:Consolas, Monaco, monospace; font-size:12px; line-height:1.6; color:#222;">
+                                                        jobs:<br />
+                                                        &nbsp;&nbsp;build:<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;# 빌드 단계<br /><br />
+                                                        &nbsp;&nbsp;deploy:<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;needs: build<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;runs-on: ubuntu-latest<br />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;# 배포 단계
+                                                    </code>
+                                                </div>
+                                            </div>
+
+                                            <p style="margin:0;">
+                                                한 번 설정해 두면 이후에는 코드를 업데이트할 때마다 같은 과정으로 자동 배포할 수 있습니다.
+                                                반복 작업은 줄고, 팀원에게 최신 결과를 공유하는 과정도 훨씬 간단해집니다.
+                                            </p>
+
+                                            <p style="margin:8px 0 0; font-size:11px; color:#777;">
+                                                참고:
+                                                <a href="https://docs.github.com/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+                                                    target="_blank"
+                                                    style="color:#0b3cc1; text-decoration:underline;">GitHub Pages
+                                                    공식 문서</a>
+                                                ·
+                                                <a href="https://vite.dev/guide/static-deploy#github-pages"
+                                                    target="_blank"
+                                                    style="color:#0b3cc1; text-decoration:underline;">Vite 정적 배포
+                                                    가이드</a>
+                                            </p>
+                                        </div>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse; margin-top:16px;">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/010.png"
+                                                        alt="GitHub Actions 워크플로 실행 화면" width="621"
+                                                        style="display:block; width:100%; max-width:621px; height:auto; border:0;" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding-top:6px; font-size:11px; line-height:1.5; color:#777;">
+                                                    GitHub Actions에서 배포 워크플로가 정상적으로 완료된 모습
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse; margin-top:16px;">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2006/07/011.png"
+                                                        alt="GitHub Pages 배포 완료 화면" width="942"
+                                                        style="display:block; width:100%; max-width:942px; height:auto; border:0;" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding-top:6px; font-size:11px; line-height:1.5; color:#777;">
+                                                    GitHub Pages에서 배포 URL이 활성화된 모습
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 푸터 -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640"
+                    style="width:640px; max-width:640px; border-collapse:collapse;">
+                    <tr>
+                        <td align="center" style="padding:12px 8px 32px; font-size:11px; line-height:1.6; color:#777;">
+                            작은 기준의 차이가 결과를 바꿉니다. 다음 뉴스레터에서 다시 뵙겠습니다.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

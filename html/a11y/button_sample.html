@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="ko-KR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="../resources/js/wai-aria.ui.js/wai-aria.ui.js"></script>
+    <title></title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="button01">버튼그룹</h2>
+    <div aria-labelledby="button01" role="group">
+        <button>
+            나는버튼2
+        </button>
+        <button>
+            나는버튼1
+        </button>
+    </div>
+
+    <br>
+
+    <button>
+        나는버튼
+    </button>
+    <br>
+    <button role="text">
+        나는버튼 text
+    </button>
+    <br>
+    <button role="text" aria-disabled="true">
+        나는 disabled 버튼
+    </button>
+    <br>
+    <button role="heading" aria-level="2">h2</button>
+
+    <br><br>
+
+    <h3 id="radio" aria-describedby="radio-msg">조회기간</h3>
+    <div aria-describedby="radio">나는 체크박스이다</div>
+    <p id="radio-msg">최근 6개월이내, 3개월 단위로만 조회 가능</p>
+
+    <hr>
+
+    <button type="button" role="link">버튼이지만 링크</button>
+
+    <br><br>
+
+    <div style="cursor:pointer" role="button" tabindex="0">버튼</div>
+    <ul>
+        <li>Enter, Space bar : 버튼 활성화</li>
+        <li>Tabindex="0": 초점을 받지 않는 요소에 적용 시 키보드 접근 가능</li>
+    </ul>
+
+    <button aria-pressed="false">음소거</button>
+    <ul>
+        <li>Enter, Space bar : 버튼 활성화</li>
+        <li>aria-pressed="ture" (눌림)</li>
+        <li>aria-pressed="false" (눌리지 않음)</li>
+    </ul>
+
+    <button aria-expanded="false" aria-controls="expanded-example">Q. 스크린리더를 테스트하려면 어떻게 해야 하나요?</button>
+    <div id="expanded-example" style="display:none">A. 전달드린 주소와 계정으로 원격 접속하여 테스트 가능합니다.</div>
+    <ul>
+        <li>Enter, Space bar : 버튼 활성화</li>
+        <li>aria-expanded="true" (확장)</li>
+        <li>aria-expanded="false" (축소)</li>
+    </ul>
+
+    <h2 id="specs">명세서</h2>
+    <div role="group" aria-describedby="specs">
+        <button aria-selected="true">1월</button>
+        <button aria-selected="false">2월</button>
+    </div>
+
+    <script></script>
+
+</body>
+
+</html>

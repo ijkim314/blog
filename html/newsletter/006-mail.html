@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Newsletter</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 0 !important;
+            outline: none !important;
+            border-collapse: collapse !important;
+            border-spacing: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+        style="border-collapse:collapse;">
+        <tr>
+            <td align="center" style="padding:24px 0;">
+                <!-- 메인 컨테이너 -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" style="
+              width:640px;
+              max-width:640px;
+              background:#ffffff;
+              border-collapse:collapse;
+            ">
+                    <!-- 헤더 배너 -->
+                    <tr>
+                        <td align="center" style="padding:0;">
+                            <img src="https://rockij.github.io/blog/resources/image/newsletter/logo.png" alt=""
+                                style="display:block; width:100%; max-width:640px; height:auto; border:0; outline:none; text-decoration:none;" />
+                        </td>
+                    </tr>
+
+                    <!-- 본문 패딩 래퍼 -->
+                    <tr>
+                        <td style="padding:24px 0px 40px 10px;">
+                            <!-- 인트로 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td style="padding:0 0 12px;">
+                                        <h1
+                                            style="margin:0; font-size:22px; line-height:1.3; font-weight:700; color:#222;">
+                                            호국 보훈의 달 6월 : 새로 추가된 css 기능 소개 부터 하네스 엔지니어링 까지
+                                        </h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 24px;">
+                                        <p style="margin:0; font-size:14px; line-height:1.6; color:#222;">
+                                            한 해의 반이 지나가고 있습니다. 참여중인 프로젝트가 가장 바쁜 시기이기도 합니다.<br />이번 뉴스레터에서는 CSS의 새 기능 소개와
+                                            AWS Summit에서 제일 많이 나온 단어중 하나인 하네스 엔지니어링에 대해서 얘기해보는 것으로 준비해 보았습니다.
+                                            <br />
+                                            (컨텐츠의 내용은 국내 사이트보다 해외 사이트를 우선으로 선정하였습니다.)
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== 카드 섹션(2열) 공통 템플릿: table 기반 ===== -->
+
+                            <!-- 1) 카드 그룹 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://codepen.io/t_afif/pen/emdoVae" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/001.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            border-shape
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://codepen.io/t_afif/pen/emdoVae" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                Underline border-shape
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            <a href="https://drafts.csswg.org/css-borders-4/#border-shape"
+                                                target="_blank" title="상세내용">border-shape</a> 속성을 사용하여 텍스트 언더라인을 스타일로
+                                            구현하는
+                                            방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://codepen.io/t_afif/pen/emdoVae" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/002.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            function
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://codepen.io/t_afif/pen/emdoVae" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                rem() and mod()
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            함수 rem()과 mod()를 활용해 나머지 연산을 CSS만으로 처리하고, 반응형 레이아웃과 반복 패턴을 더
+                                            유연하게 구현하는 방법.
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://codepen.io/captainbrosset/pen/jEMWepJ" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/003.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            color
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://codepen.io/captainbrosset/pen/jEMWepJ" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                contrast-color() playground
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            <a href="https://drafts.csswg.org/css-color-5/#contrast-color"
+                                                target="_blank" title="상세내용">contrast-color()</a> 함수를 활용해 배경색과 충분한 명암
+                                            대비를 가지는 텍스트 색상을 동적으로 생성하는 방법
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- 2) 카드 그룹 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://css-tip.com/bending-line/" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/005.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            border-shape
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://css-tip.com/bending-line/" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                Bending a Straight Line
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            <a href="https://drafts.csswg.org/css-borders-4/#border-shape"
+                                                target="_blank" title="상세내용">border-shape</a> 속성을 활용하여 직선 요소를 구부러진 형태로
+                                            스타일링하는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://daverupert.com/2026/01/contrast-color-with-custom-design-tokens/"
+                                            target="_blank" style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/004.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            color
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://daverupert.com/2026/01/contrast-color-with-custom-design-tokens/"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                design system contrast-color()
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            <a href="https://drafts.csswg.org/css-color-5/#contrast-color"
+                                                target="_blank" title="상세내용">contrast-color()</a>와 커스텀 디자인 토큰을 결합해 배경색에
+                                            따라 자동으로 가독성 높은 텍스트 색상을 적용하는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://codepen.io/una/pen/bNeLmoZ" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/006.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            tooltip
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://codepen.io/una/pen/bNeLmoZ" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                Tooltip Generator with border-shape
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            <a href="https://drafts.csswg.org/css-borders-4/#border-shape"
+                                                target="_blank" title="상세내용">border-shape</a> 속성을 활용하여 다양한 스타일의 툴팁을 생성하는
+                                            방법
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- 3) 카드 그룹 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://css-tip.com/interactive-slider/" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/007.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            Slider
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://css-tip.com/interactive-slider/" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                Interactive Image Slider/Carousel
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            shape(), sibling-index()/count(), animation-composition 속성을 활용하여 CSS만으로
+                                            인터랙티브한 이미지 슬라이더/캐러셀을 구현
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://codepen.io/DenDionigi/pen/ogxJdqr" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/008.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            function
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://codepen.io/DenDionigi/pen/ogxJdqr" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                Random() Snow
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            random() 함수를 활용하여 CSS만으로 눈이 내리는 애니메이션 효과를 구현하는 방법
+                                        </p>
+                                    </td>
+
+                                    <td valign="top" width="33.33%" style="padding:0 10px 28px 0;">
+                                        <a href="https://webkit.org/blog/16854/margin-trim/" target="_blank"
+                                            style="text-decoration:none;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/009.png"
+                                                alt=""
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:3px; margin:0 0 8px;" />
+                                        </a>
+
+                                        <div
+                                            style="font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:#777; margin:0 0 4px;">
+                                            margin
+                                        </div>
+
+                                        <h3 style="margin:0 0 4px; font-size:14px; line-height:1.4; font-weight:700;">
+                                            <a href="https://webkit.org/blog/16854/margin-trim/" target="_blank"
+                                                style="color:#0b3cc1; text-decoration:underline;">
+                                                Easier layout margin-trim
+                                            </a>
+                                        </h3>
+
+                                        <p style="margin:0; font-size:13px; line-height:1.6; color:#444;">
+                                            margin-trim 속성을 활용하여 요소의 마진이 부모 요소의 경계에 닿을 때 자동으로 마진을 제거하여 레이아웃을 더 쉽게 구성하는
+                                            방법
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== Resources(helps) ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:8px;">
+                                <tr>
+                                    <td style="padding:0;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:20px; background:#f5f5f5;">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Resources</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        작업에 도움이 되는 유용한 사이트를 소개합니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://daily.dev/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            daily.dev
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        개발자들을 위한 개인화된 뉴스 피드와 커뮤니티 플랫폼으로, 최신 기술 트렌드와 인사이트를 제공
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://uiverse.io/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            uiverse.io
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        디자이너와 개발자를 위한 UI 컴포넌트 라이브러리와 영감을 주는 디자인 예제를 제공하는 플랫폼
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://www.npmjs.com/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            npm
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        자바스크립트 런타임 Node.js의 패키지 매니저로, 수백만 개의 오픈 소스 라이브러리와 도구를 호스팅하는 플랫폼
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://react.foundation/" target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            React Foundation
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        React 개발자들을 위한 리소스와 커뮤니티로, 튜토리얼, 라이브러리, 이벤트 정보를 제공
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== YouTube 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:35px; padding-right:12px;">
+                                                    <img src="https://rockij.github.io/blog/resources/image/newsletter/logo-youtube.png"
+                                                        alt=""
+                                                        style="display:block; width:35px; height:auto; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        youtube code</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        실무 관점에서 바로 적용할 수 있는 인사이트 영상
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://youtube.com/shorts/vCKC2dl8uBk?si=-vFuqESWko4iK2W4"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            CSS로 콘텐츠를 흐리게 만드는 두 가지 방법과 각각의 장단점
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://youtube.com/shorts/4B_4WLpbyp8?si=wNndh5STwTzcAYXN"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            CSS에서 가장 쉽게 적용할 수 있는 개선 방법과 그 효과
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 0 14px;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://youtube.com/shorts/PdTPpjMiQFg?si=4PJMYTLpGoKfub2q"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">속성 선택자를
+                                                            활용하여 HTML 요소의 특정 속성이나 값에 따라 스타일을 적용하는 방법 </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://youtube.com/shorts/FejJHQTrS48?si=sCboAz9fnSohnwJ5"
+                                                            target="_blank"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            cqw와 cqi 단위를 활용하여 뷰포트 크기에 따라 요소의 크기를 유연하게 조절하는 방법
+                                                        </a>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== ReactPub 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:35px; padding-right:12px;">
+                                                    <img src="https://rockij.github.io/blog/resources/image/newsletter/logo-react.png"
+                                                        alt=""
+                                                        style="display:block; width:35px; height:auto; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        React Pub Storybook</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        React 코드 레퍼런스 사이트 업데이트 소식
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <div style="font-size:13px; line-height:1.7; color:#333;">
+                                            <img src="https://rockij.github.io/blog/resources/image/newsletter/06/010.png"
+                                                alt=""
+                                                style="display:block; max-width:100%; height:auto; border:0; border-radius: 12px;" />
+                                            <a href="https://youtube.com/shorts/vCKC2dl8uBk?si=-vFuqESWko4iK2W4"
+                                                target="_blank" style="color:#0b3cc1; text-decoration:underline;">
+                                                ImageWave 컴포넌트 추가
+                                            </a><br /><br />
+                                            참여를 못하더라도 레퍼런스 참고를 하고 싶으신 분도 <b>제 회사 메일로 <a href="https://github.com/"
+                                                    target="_blank">github</a> 사용 계정 아이디와 초대받을 이메일 주소를 보내주시면 초대
+                                                하겠습니다.</b>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== 에디터 섹션 ===== -->
+                            <!-- https://css-tricks.com/the-importance-of-investing-in-soft-skills-in-the-age-of-ai/ -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:50px; padding-right:12px;">
+                                                    <img src="https://rockij.github.io/blog/resources/image/newsletter/01/character.png"
+                                                        alt="Editor avatar"
+                                                        style="display:block; width:50px; height:50px; border-radius:50%; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Kim's Focus</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        편집자가 현재 고민하고 있는 소소한 내용을 공유합니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <h3 style="margin:0 0 10px; font-size:16px; font-weight:700; color:#222;">
+                                            하네스 엔지니어링이란 무엇인가요?
+                                        </h3>
+
+                                        <div style="font-size:13px; line-height:1.7; color:#333;">
+                                            2026년 5월 20일 열린 AWS Summit Seoul 2026 행사에서 유독 많이 들렸던 말이 있습니다.<br />바로 하네스
+                                            엔지니어링(Harness Engineering) 입니다. 익숙한 용어는 아니지만, AI 에이전트가 실제 업무를 안정적으로 수행하게 만드는
+                                            데 핵심이 되는 개념입니다.
+                                            <br /><br />
+                                            쉽게 말해, 하네스 엔지니어링은 자율적으로 일하는 AI 에이전트가 어떤 환경에서, 어떤 규칙을 따라, 얼마나 안전하게 일할지를 설계하는
+                                            일입니다.<br />
+                                            에이전트가 어떤 도구를 호출할지, 어디서 정보를 가져올지, 내린 판단을 어떻게 검증할지, 그리고 언제 작업을 멈춰야 할지까지 정하는 것이
+                                            모두 여기에 포함됩니다.
+                                            <br /><br />
+                                            AI 에이전트 개발은 보통 3단계로 나눠서 이해할 수 있습니다.<br /><br />
+
+                                            1. 프롬프트 엔지니어링은 질문을 어떻게 표현하고, 어떤 구조와 예시를 주느냐를 다룹니다. 즉, 한 번의 대화에서 더 좋은 답변을 얻기
+                                            위한
+                                            기술입니다.<br />
+                                            2. 컨텍스트 엔지니어링은 모델이 한 번에 어떤 정보를 볼지 설계하는 일입니다. 어떤 문서를 검색할지, 긴 기록을 어떻게 요약할지,
+                                            무엇을
+                                            넣고 무엇을 뺄지 관리합니다.<br />
+                                            3. 하네스 엔지니어링은 그보다 한 단계 더 바깥의 문제를 다룹니다. 에이전트가 실제로 일하는 환경 전체를 설계하는 것으로, 도구, 지식
+                                            소스, 검증 로직, 아키텍처 규칙, 실행 중단 조건 등을 포함합니다.<br />
+                                            정리하면, 프롬프트 엔지니어링과 컨텍스트 엔지니어링은 “한 번의 작업 품질”을 높이는 일이고, 하네스 엔지니어링은 “사람이 계속
+                                            지켜보지 않아도 에이전트가 몇 시간씩 안정적으로 일할 수 있게 만드는 일” 이라고 볼 수 있습니다.
+                                            <br /><br />
+                                            하네스 엔지니어링은 단순히 “AI를 잘 쓰는 방법”이 아닙니다.<br />
+                                            AI가 실수하더라도 통제 가능한 범위 안에서 일하게 만들고, 사람이 일일이 개입하지 않아도 안정적으로 결과를 내도록 환경 자체를 설계하는
+                                            방법입니다.
+                                            <br /><br />
+                                            프롬프트를 잘 쓰는 것만으로는 한 번의 답변 품질을 높일 수 있습니다.<br />
+                                            컨텍스트를 잘 설계하면 더 적절한 정보를 바탕으로 답하게 만들 수 있습니다.<br />
+                                            하지만 하네스 엔지니어링이 있어야 비로소 AI 에이전트가 실제 업무 환경에서 오랫동안, 안정적으로, 반복 가능한 방식으로 일할 수
+                                            있습니다.
+                                            <br /><br />
+                                            이번에 AWS Summit에서 들은 여러 사례와 팁을 보면서, AI 에이전트 개발 회사들이 하네스 엔지니어링에 얼마나 많은 고민과 노력을
+                                            기울이고 있는지, 그리고 그만큼 이 개념이 중요하다는 것을 다시 한 번 느낄 수 있었습니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 푸터 -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640"
+                    style="width:640px; max-width:640px; border-collapse:collapse;">
+                    <tr>
+                        <td align="center" style="padding:12px 8px 32px; font-size:11px; line-height:1.6; color:#777;">
+                            작은 기준의 차이가 결과를 바꿉니다. 다음 뉴스레터에서 다시 뵙겠습니다.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

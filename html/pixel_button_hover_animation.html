@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ko-KR">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link href="../resources/css/font-poppins.css" rel="stylesheet">
+<link href="../resources/css/font-anonymous.css" rel="stylesheet">
+<link href="../resources/css/font-montserrat.css" rel="stylesheet">
+<link href="../resources/css/font-courierprime.css" rel="stylesheet">
+<link href="../resources/css/font-oleoscript.css" rel="stylesheet">
+<link href="../resources/css/font-opensans.css" rel="stylesheet">
+<link rel="stylesheet" href="../resources/css/reset.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<script src="../resources/js/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.2.3/ionicons.min.js"></script> <!-- 상대경로X -->
+<title></title>
+<style>
+/*
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+*/
+*{box-sizing: border-box;}
+body{
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background:#111;
+}
+a{
+    position: relative;
+    width:180px;
+    height:60px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2px;
+    margin:20px;
+    transition: .5s;
+}
+a:hover{
+    background:#ec0b36 url(../resources/image/pixel.png);
+    transition-delay: .8s;
+    background-size:180px;
+    animation: animate .8s steps(8) forwards;
+}
+@keyframes animate {
+    0%{
+        background-position-y:0
+    }
+    100%{
+        background-position-y:-480px
+    }
+}
+</style>
+</head>
+<body>
+
+<a href="#">Pixel Button</a>
+<a href="#">Hover Effects</a>
+
+<script>
+</script>
+
+</body>
+</html>

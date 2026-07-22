@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ko-KR">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<link href="../resources/css/font-poppins.css" rel="stylesheet">
+<link href="../resources/css/font-anonymous.css" rel="stylesheet">
+<link href="../resources/css/font-montserrat.css" rel="stylesheet">
+<link href="../resources/css/font-courierprime.css" rel="stylesheet">
+<link href="../resources/css/font-oleoscript.css" rel="stylesheet">
+<link href="../resources/css/font-opensans.css" rel="stylesheet">
+<link href="../resources/css/font-raleway.css" rel="stylesheet">
+<link href="../resources/css/font-roboto.css" rel="stylesheet">
+<link href="../resources/css/font-quicksand.css" rel="stylesheet">
+<link rel="stylesheet" href="../resources/css/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<!-- <script src="../resources/js/jquery-1.12.4.min.js"></script> -->
+<script src="../resources/js/jquery.min.3.4.1.js"></script>
+<script src="../resources/js/gsap.min.js"></script>
+<script src="../resources/js/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.2.3/ionicons.min.js"></script> <!-- 상대경로X -->
+<title></title>
+<style>
+/*
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#2e2e2e, #333);
+}
+.infinite{
+    position: relative;
+    width: 800px;
+    height: 160px;
+    background: #525252;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg);
+}
+.infinite::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #fff 0%, #fff 70%, #525252 70%, #525252 100%);
+    background-size: 120px;
+    animation: animateRoad 1s linear infinite;
+}
+@keyframes animateRoad{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -120px;
+    }
+}
+.infinite::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #333;
+    bottom: -30px;
+    transform-origin: top;
+    transform: perspective(500px) rotateX(-25deg);
+}
+.shadow{
+    position: absolute;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    background: linear-gradient(rgba(0,0,0,.25), transparent);
+}
+.box{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+    animation: animateBox 1s linear infinite;
+}
+@keyframes animateBox{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+.square{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    transform-origin: bottom right;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="infinite">
+        <div class="shadow"></div>
+    </div>
+    <div class="box">
+        <div class="square"></div>
+    </div>
+</div>
+
+<script>
+</script>
+
+</body>
+</html>       

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ko-KR">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<link href="../resources/css/font-poppins.css" rel="stylesheet">
+<link href="../resources/css/font-anonymous.css" rel="stylesheet">
+<link href="../resources/css/font-montserrat.css" rel="stylesheet">
+<link href="../resources/css/font-courierprime.css" rel="stylesheet">
+<link href="../resources/css/font-oleoscript.css" rel="stylesheet">
+<link href="../resources/css/font-opensans.css" rel="stylesheet">
+<link href="../resources/css/font-raleway.css" rel="stylesheet">
+<link href="../resources/css/font-roboto.css" rel="stylesheet">
+<link href="../resources/css/font-quicksand.css" rel="stylesheet">
+<link rel="stylesheet" href="../resources/css/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<!-- <script src="../resources/js/jquery-1.12.4.min.js"></script> -->
+<script src="../resources/js/jquery.min.3.4.1.js"></script>
+<script src="../resources/js/gsap.min.js"></script>
+    <title></title>
+<style>
+/*
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+*/
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.particle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border:2px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3),
+                0 0 10px rgba(0,0,0,.3),
+                0 0 20px rgba(0,0,0,.3);
+}
+</style>
+<script>
+$(function(){
+
+let count = 100,
+    particleClass = "particle",
+    particleColors = ["#fb5607", "#ff006e", "#8338ec", "#3a86ff"],
+    container = document.getElementById("container"),
+    w = container.offsetWidth,
+    h = container.offsetHeight,
+    elem;
+for(let i = 0; i < count; i++){
+    elem = document.createElement('div');
+    elem.className = particleClass;
+    container.appendChild(elem);
+    let size = gsap.utils.random(10,20);
+    gsap.set(elem, {
+        width: size,
+        height: size,
+        x: gsap.utils.random(0, w),
+        y: gsap.utils.random(0, h) + (h * .5),
+        borderColor: gsap.utils.random(particleColors)
+    });
+    anime(elem);
+}
+function anime(elem){
+    gsap.to(elem, gsap.utils.random(5, 10), {
+        y: -(h / 2),
+        ease: 'none',
+        repeat: -1,
+        delay: -10
+    });
+    gsap.to(elem, gsap.utils.random(1, 6), {
+        x: '+=50',
+        ease: 'power1.inOut',
+        repeat: -1,
+        yoyo: true
+    });
+    gsap.to(elem, gsap.utils.random(1, 2), {
+        opacity: 0,
+        ease: 'power1.inOut',
+        repeat: -1,
+        yoyo: true
+    });
+    gsap.to(elem, gsap.utils.random(5, 10), {
+        rotate: 360,
+        ease: 'none',
+        repeat: -1,
+    });
+}
+});
+</script>
+</head>
+<body>
+
+<div id="container"></div>
+
+</body>
+</html>       

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ko-KR">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<link href="../resources/css/font-poppins.css" rel="stylesheet">
+<link href="../resources/css/font-anonymous.css" rel="stylesheet">
+<link href="../resources/css/font-montserrat.css" rel="stylesheet">
+<link href="../resources/css/font-courierprime.css" rel="stylesheet">
+<link href="../resources/css/font-oleoscript.css" rel="stylesheet">
+<link href="../resources/css/font-opensans.css" rel="stylesheet">
+<link href="../resources/css/font-raleway.css" rel="stylesheet">
+<link href="../resources/css/font-roboto.css" rel="stylesheet">
+<link href="../resources/css/font-quicksand.css" rel="stylesheet">
+<link rel="stylesheet" href="../resources/css/reset.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<!-- <script src="../resources/js/jquery-1.12.4.min.js"></script> -->
+<script src="../resources/js/jquery.min.3.4.1.js"></script>
+<script src="../resources/js/gsap.min.js"></script>
+<script src="../resources/js/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.2.3/ionicons.min.js"></script> <!-- 상대경로X -->
+<title></title>
+<style>
+/*
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background: linear-gradient(to right, #201d2e 50%, #f6f6f6 50%) fixed;
+}
+.container{
+    width: 90vmin;
+    background-color: #fff;
+    padding: 50px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(60,60,60,.2);
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper input{
+    width: 60%;
+    padding: 10px 7px;
+    border-radius: 3px;
+    border: 1px solid #201d2e
+}
+.wrapper button{
+    width: 30%;
+    background-color: #201d2e;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+}
+.container p{
+    line-height: 35px;
+    text-align: justify;
+    margin-top: 30px;
+}
+mark{
+    background-color: #ffdd4b;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <input type="text" name="" id="text-to-search" placeholder="Enter text to search..">
+        <button onclick="search()">Search</button>
+    </div>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur eos vel reprehenderit odio ex repellat sed hic fugiat ipsam, velit laborum architecto quia sit nobis? Suscipit debitis non obcaecati et reiciendis possimus numquam commodi, tenetur saepe tempora quam accusamus maxime soluta inventore repudiandae voluptate. Distinctio eveniet impedit error perferendis.</p>
+</div>
+
+<script>
+function search(){
+    let textToSearch = document.getElementById("text-to-search").value;
+    let paragraph = document.getElementById('paragraph');
+    textToSearch = textToSearch.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+    let pattern = new RegExp(`${textToSearch}`,"gi");
+    paragraph.innerHTML = paragraph.textContent.replace(pattern, match => `<mark>${match}</mark>`)
+}
+</script>
+
+</body>
+</html>       

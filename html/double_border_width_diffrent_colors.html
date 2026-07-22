@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ko-KR">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<link href="../resources/css/font-poppins.css" rel="stylesheet">
+<link href="../resources/css/font-anonymous.css" rel="stylesheet">
+<link href="../resources/css/font-montserrat.css" rel="stylesheet">
+<link href="../resources/css/font-courierprime.css" rel="stylesheet">
+<link href="../resources/css/font-oleoscript.css" rel="stylesheet">
+<link href="../resources/css/font-opensans.css" rel="stylesheet">
+<link href="../resources/css/font-raleway.css" rel="stylesheet">
+<link rel="stylesheet" href="../resources/css/reset.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<script src="../resources/js/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.2.3/ionicons.min.js"></script> <!-- 상대경로X -->
+<title></title>
+<style>
+/*
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+*/
+*, *::before{
+    box-sizing: border-box;
+}
+.border{
+    width: 200px;
+    height: 200px;
+    border:8px solid transparent;
+    box-shadow: 0 0 0 8px #202539, inset 0 0 0 8px #3966dd;
+}
+.border2{
+    --border-width:8px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border:var(--border-width) solid #202539;
+    display: grid;
+    place-items: center;
+}
+.border2::before{
+    content:'';
+    position: absolute;
+    height:calc(100% - var(--border-width) * 2);
+    width:calc(100% - var(--border-width) * 2);
+    border:var(--border-width) solid #3966dd;
+}
+</style>
+</head>
+<body>
+
+<div class="border"></div>
+<br>
+<div class="border2"></div>
+
+<script>
+</script>
+
+</body>
+</html>       
