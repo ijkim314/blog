@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="109" viewBox="0 0 119 109" role="img" aria-labelledby="title">
+  <title id="title">법원도서관</title>
+  <g font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#0871b8">
+    <text x="30" y="27" transform="rotate(-42 30 27)">대</text>
+    <text x="42" y="18" transform="rotate(-23 42 18)">한</text>
+    <text x="56" y="14">민</text>
+    <text x="70" y="17" transform="rotate(22 70 17)">국</text>
+    <text x="84" y="25" transform="rotate(42 84 25)">법</text>
+    <text x="91" y="39" transform="rotate(64 91 39)">원</text>
+  </g>
+  <g transform="translate(24 25)">
+    <path d="M32 11c5 1 10 0 15-3l-2 7c-5 3-10 4-15 3z" fill="#f5c400"/>
+    <path d="M28 13c4 8 5 17 4 27l-9-1c1-10 0-18-4-24z" fill="#ed174c"/>
+    <path d="M34 11c-3 9-2 19 4 29l-8 3c-7-12-8-23-3-34z" fill="#009b8e"/>
+    <path d="M41 5c-7 15-6 32 4 47H28c7-16 7-31 1-45z" fill="#0068aa"/>
+    <path d="M42 24c7 16 16 24 28 27H39c-4-10-5-19-3-27z" fill="#0068aa"/>
+    <circle cx="41" cy="4" r="4" fill="#0068aa"/>
+    <path d="M41 14L63 9M55 11v16M48 12l-5 13M62 9l7 14" fill="none" stroke="#0068aa" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M39 25h8l-4 3zm25-2h10l-5 4z" fill="none" stroke="#0068aa" stroke-width="1.5"/>
+  </g>
+  <text x="59.5" y="103" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="19" font-weight="700" fill="#0068aa">법원도서관</text>
+</svg>
