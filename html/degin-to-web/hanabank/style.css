@@ -30,7 +30,7 @@ a {
 .phone-shell {
     width: min(100%, 393px);
     min-height: 100vh;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 17px 20px 62px;
     background: linear-gradient(180deg, #e3eeee 0%, var(--page-bg) 43%, #eef0f2 100%);
 }
