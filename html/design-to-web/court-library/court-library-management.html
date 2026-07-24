@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법원도서관 대상관리</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+    <aside class="sidebar">
+        <div class="sidebar-brand"><img src="court-library-logo.svg" alt="법원도서관"><span>법원도서관</span></div>
+        <button class="collapse" type="button" aria-label="메뉴 접기">‹</button>
+        <div class="user-info"><strong>홍길동</strong> 님 <small>- 02:12 ◷</small><b>법원도서관 지식운영과</b><p>로그아웃&nbsp; | &nbsp;비밀번호변경</p></div>
+        <nav class="side-nav" aria-label="주 메뉴">
+            <a href="#"><i>▣</i>수집납본<span>⌄</span></a><a class="active" href="#"><i>🛒</i>수서</a>
+            <a href="#"><i>◔</i>연관물<span>⌄</span></a><a href="#"><i>▧</i>편목<span>⌄</span></a>
+            <a href="#"><i>♢</i>기사색인<span>⌄</span></a><a href="#"><i>▤</i>열람<span>⌄</span></a>
+            <a href="#"><i>✧</i>저작권관리<span>⌄</span></a><a href="#"><i>♙</i>전자자원구축<span>⌄</span></a>
+            <a href="#"><i>◫</i>파일시스템<span>⌄</span></a><a href="#"><i>▣</i>청용도서<span>⌄</span></a>
+            <a href="#"><i>◇</i>사법간행물<span>⌄</span></a><a href="#"><i>▥</i>통계<span>⌄</span></a>
+            <a href="#"><i>▤</i>시소러스관리<span>⌄</span></a><a href="#"><i>⌘</i>시스템관리<span>⌄</span></a>
+            <a href="#"><i>⚙</i>환경설정</a>
+        </nav>
+    </aside>
+
+    <main class="workspace">
+        <header class="topbar">
+            <div class="breadcrumb">⌂　홈　›　수서　›　<strong>대상관리</strong></div>
+            <label class="global-search"><input type="search" placeholder="통합검색"><span>⌕</span></label>
+            <button>대법원 열람실</button><div class="top-icons">♧　⇩　♧　★　⚙　▱　▣　☰</div>
+        </header>
+        <div class="window-tabs"><span>등록　×</span><span class="selected">대시보드　×</span><span>선정관리　×</span><span>차수조회　×</span><span>차수번호일괄재부여　×</span><span>인쇄배부자료　×</span><span>전단계처리　×</span><b>⌄ 3　▣　×</b></div>
+
+        <section class="content">
+            <div class="category-tabs"><button>단행자료</button><button class="active">연속자료</button><button>전자자료</button><button>전자자원관리</button><button>사법간행물</button></div>
+            <div class="filters">
+                <label>레이블노출됩니다<input placeholder="배부처검색"></label><label>레이블노출됩니다<input placeholder="배부처검색"></label><label>레이블노출됩니다<input placeholder="배부처검색"></label><label>레이블노출됩니다<input placeholder="배부처검색"></label>
+            </div>
+            <div class="summary-row"><label>건수 <input value="100" readonly></label><label>금액합계 <input value="210.000.000" readonly></label><div class="view-tools">◎　<span>⟳</span>　⌕　⌄</div></div>
+            <div class="action-row"><div><button>레이블출력</button><button>서가정보지정</button><button>보관전환</button><button>불용제적</button><button>분실 / 사고처리</button><button>취소처리</button><button>분실/사고완료처리</button><button>불용제적</button></div><div><button>수정</button><button>삭제</button><button>저장</button></div></div>
+
+            <div class="table-wrap">
+                <table class="data-table">
+                    <thead><tr><th><input type="checkbox"></th><th>순번</th><th>수서단계</th><th>대상관리번호</th><th>자료유형</th><th>서명 ↑</th><th>권호정보</th><th>저자</th><th>출판사</th><th>출판년도</th><th>판차</th><th>ISBN/ISSN</th></tr></thead>
+                    <tbody id="book-rows"></tbody>
+                </table>
+            </div>
+            <footer class="grid-footer"><span>건수 : <b>5건</b> / 153건</span><div class="pagination">‹‹　‹　<strong>1</strong>　2　3　4　5　6　7　8　…　99　›　››</div><label><input value="15">　⇩　⎔</label></footer>
+        </section>
+    </main>
+    <script>
+        const titles=['논의방정식','위버맨앤쉬','이해찬회고록','철학','엄마를 부탁해','진보를위한주식투자','괴테는 모든것을 말했다','Marie Claire Korea','사회주의철학','코스모스','작별이라하지 않겠다','양자역학','진화론','불안을 아이에게 넘기지 않는 엄마의 마음 연습','지난여름에 한일을 알고있다','동물의왕국','무가치함의 심리학','한강','도덕적인간과 비도덕적사회','수조세계','나는 AI로 금투자에 투자한다'];
+        const authors=['모건하우절','니체','이해찬','구병모','임인자','이광수','스즈키유미','하우철','박경리','한강','박경리','김성곤','황석영','구병모','박경리','메모토 기쓰오'];
+        const publishers=['서삼독','떠오름','서사원주니워','Hearst Korea','문학동네','21세기폭스','리프','미래의창','인플루엔셜','우림출판','후미즈키 아오이','곽경일'];
+        document.getElementById('book-rows').innerHTML=Array.from({length:34},(_,i)=>`<tr class="${i===5?'checked':''}"><td><input type="checkbox" ${i===5?'checked':''}></td><td>${i+1}</td><td>12143228</td><td>대상관리번호</td><td>자료유형</td><td>${titles[i%titles.length]}</td><td>Vol.1(창간호)</td><td>${authors[i%authors.length]}</td><td>${publishers[i%publishers.length]}</td><td>2020</td><td>제3호</td><td>1225-598X</td></tr>`).join('');
+    </script>
+</body>
+</html>
