@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>법원도서관 연계 현황</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="api-status-page">
+  <aside class="status-sidebar">
+    <div class="status-brand"><img src="court-library-logo.svg" alt=""><strong>법원도서관</strong></div>
+    <button class="sidebar-fold" type="button">‹</button>
+    <div class="status-user"><b>홍길동 님</b><span>- 02:12 ◷</span><strong>법원도서관 지식운영과</strong><small>로그아웃&nbsp;&nbsp;|&nbsp;&nbsp;비밀번호변경</small></div>
+    <nav class="status-nav">
+      <a href="#"><i>▣</i>수집납본<span>⌄</span></a><a href="#"><i>🛒</i>수서<span>⌄</span></a>
+      <a href="#"><i>◔</i>연관물<span>⌄</span></a><a href="#"><i>▧</i>편목<span>⌄</span></a>
+      <a href="#"><i>♧</i>기사색인<span>⌄</span></a><a href="#"><i>▤</i>열람<span>⌄</span></a>
+      <a href="#"><i>✧</i>저작권관리<span>⌄</span></a><a href="#"><i>♙</i>전자자원구축<span>⌄</span></a>
+      <a href="#"><i>▱</i>파일시스템<span>⌄</span></a><a href="#"><i>▣</i>청용도서<span>⌄</span></a>
+      <a href="#"><i>▰</i>사법간행물<span>⌄</span></a><a href="#"><i>▥</i>통계<span>⌄</span></a>
+      <a href="#"><i>▣</i>시소러스관리<span>⌄</span></a><a href="#"><i>♙</i>시스템관리<span>⌄</span></a>
+      <a href="#"><i>⚙</i>환경설정<span>⌄</span></a>
+    </nav>
+  </aside>
+
+  <main class="status-workspace">
+    <header class="status-topbar">
+      <div class="status-breadcrumb">⌂ &nbsp; 홈　›　수서　›　<strong>대상관리</strong></div>
+      <label class="status-search"><input type="search" placeholder="통합검색"><span>⌕</span></label>
+      <button>대법원열람실</button><div class="status-tools">♧　⇩　♧　<span>★</span>　⚙　□　▣　☰</div>
+    </header>
+    <div class="status-tabs" id="status-tabs"></div>
+
+    <section class="status-content">
+      <div class="period-filter">
+        <strong>조회기간</strong><input value="2025.02.01"><span>-</span><input value="2025.02.01"><span>▣</span>
+        <label><input type="radio" checked> 1일(24h)</label><label><input type="radio"> 7일</label><label><input type="radio"> 14일</label><label><input type="radio"> 30일</label>
+      </div>
+      <div class="status-view-tools">◎　<span>⟳</span>　⌕</div>
+
+      <h2>연계 현황(Today)</h2>
+      <section class="today-status">
+        <div class="status-summary">
+          <div class="summary-line calls"><b>연계</b><div class="call-circles"><span><i>000</i>총호출</span><span><i>123</i>성공</span><span><i>00</i>오류</span></div><div class="metric-set"><span>ㆍ인증/권한　 <em>00</em></span><span>ㆍ연계/지연　 <em>00</em></span><span>ㆍ시스템장애　 <em>00</em></span><span>ㆍ요청　　　<em>00</em></span><span>ㆍ내부처리　 <em>00</em></span></div></div>
+          <div class="summary-line"><b>API</b><div class="metric-set wide"><span>ㆍ정상　　 00</span><span>ㆍ중지　　 00</span><span>ㆍ점검　　 00</span><span>ㆍ폐기　　 00</span></div></div>
+          <div class="summary-line"><b>API KEY</b><div class="metric-set wide"><span>ㆍ활성　　 00</span><span>ㆍ정지　　 00</span><span>ㆍ폐기　　 00</span><span>ㆍ만료임박　 <em>00</em></span></div></div>
+        </div>
+        <div class="trend-chart">
+          <svg viewBox="0 0 760 195" role="img" aria-label="시간별 성공 및 오류 추이">
+            <g class="chart-grid"><path d="M60 18H740M60 47H740M60 76H740M60 105H740M60 134H740M60 163H740"/></g>
+            <g class="axis-labels"><text x="17" y="23">20%</text><text x="17" y="52">20%</text><text x="17" y="81">20%</text><text x="17" y="110">20%</text><text x="17" y="139">20%</text><text x="17" y="168">20%</text></g>
+            <path class="blue-line" d="M60 18 C85 18 73 45 87 48 S120 50 145 72 S177 112 205 80 S238 98 263 55 S287 172 318 164 S350 144 377 177 S410 170 430 115 S455 150 482 122 S515 145 540 116 S570 125 598 102 S625 114 651 92 S685 103 711 95 S729 86 740 78"/>
+            <path class="orange-line" d="M60 80 C92 42 101 87 132 78 S169 50 200 72 S222 96 246 58 S273 73 295 72 S328 77 350 38 S385 9 404 18 S425 81 448 123 S475 150 491 113 S501 51 519 48 S530 112 558 101 S585 74 610 64 S640 83 667 82 S698 105 714 114 S731 153 740 161"/>
+            <g class="chart-dots"><circle cx="87" cy="48" r="5"/><circle cx="145" cy="72" r="5"/><circle cx="205" cy="80" r="5"/><circle cx="263" cy="55" r="5"/><circle cx="377" cy="177" r="5"/><circle cx="430" cy="115" r="5"/><circle cx="482" cy="122" r="5"/><circle cx="540" cy="116" r="5"/><circle cx="598" cy="102" r="5"/><circle cx="651" cy="92" r="5"/><circle cx="711" cy="95" r="5"/></g>
+            <g class="orange-dots"><circle cx="87" cy="61" r="5"/><circle cx="200" cy="72" r="5"/><circle cx="246" cy="58" r="5"/><circle cx="404" cy="18" r="5"/><circle cx="448" cy="123" r="5"/><circle cx="519" cy="48" r="5"/><circle cx="558" cy="101" r="5"/><circle cx="610" cy="64" r="5"/><circle cx="667" cy="82" r="5"/><circle cx="714" cy="114" r="5"/></g>
+            <g class="time-labels"><text x="12" y="190">08:00</text><text x="70" y="190">08:30</text><text x="128" y="190">09:00</text><text x="186" y="190">09:30</text><text x="244" y="190">10:00</text><text x="302" y="190">10:30</text><text x="360" y="190">11:00</text><text x="418" y="190">11:30</text><text x="476" y="190">12:00</text><text x="534" y="190">12:30</text><text x="592" y="190">13:00</text><text x="650" y="190">13:30</text><text x="708" y="190">14:00</text></g>
+          </svg>
+          <div class="chart-tooltip"><strong>18 : 00</strong><span><i class="success-dot"></i>성공 <b>0.81</b></span><span><i class="error-dot"></i>오류 <b>0.13</b></span></div>
+        </div>
+      </section>
+
+      <div class="status-table-wrap">
+        <table class="status-data-table">
+          <thead><tr><th rowspan="2">번호</th><th rowspan="2">API명</th><th rowspan="2">총호출</th><th rowspan="2">성공</th><th colspan="6">유형별 오류</th><th colspan="3">응답시간(ms)</th></tr><tr><th>요청</th><th>인증/권한</th><th>내부처리</th><th>시스템장애</th><th>오류합계</th><th>오류율(%)</th><th>평균</th><th>최대</th><th>최소</th></tr></thead>
+          <tbody id="status-rows"></tbody>
+        </table>
+        <div class="status-fake-scroll"><span></span></div>
+      </div>
+      <footer class="status-footer"><span>건수 : <b>5건</b> / 153건</span><div>≪　‹　<strong>1</strong>　2　3　4　5　6　7　8　…　99　›　≫</div><label><input value="15">　⇩　♧</label></footer>
+    </section>
+  </main>
+  <script>
+    document.getElementById('status-tabs').innerHTML = Array.from({length:12}, (_,i) => `<span>메뉴명메뉴명　×</span>`).join('') + '<b>▱　×</b>';
+    document.getElementById('status-rows').innerHTML = Array.from({length:31}, () => '<tr><td>123</td><td>판매목록 조회</td><td>0000</td><td>0000</td><td>0000</td><td>0000</td><td>00</td><td>00</td><td class="danger">00</td><td class="danger">00.0</td><td>00</td><td>00</td><td>00</td></tr>').join('');
+  </script>
+</body>
+</html>

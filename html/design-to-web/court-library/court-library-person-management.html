@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>법원도서관 인물정보관리</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="person-page">
+  <aside class="status-sidebar">
+    <div class="status-brand"><img src="court-library-logo.svg" alt=""><strong>법원도서관</strong></div>
+    <button class="sidebar-fold" type="button">‹</button>
+    <div class="status-user"><b>홍길동 님</b><span>- 02:12 ◷</span><strong>법원도서관 지식운영과</strong><small>로그아웃&nbsp;&nbsp;|&nbsp;&nbsp;비밀번호변경</small></div>
+    <nav class="status-nav">
+      <a href="#"><i>▣</i>수집납본<span>⌄</span></a><a href="#"><i>🛒</i>수서<span>⌄</span></a><a href="#"><i>◔</i>연관물<span>⌄</span></a><a href="#"><i>▧</i>편목<span>⌄</span></a><a href="#"><i>♧</i>기사색인<span>⌄</span></a><a href="#"><i>▤</i>열람<span>⌄</span></a><a class="current" href="#"><i>✧</i>저작권관리<span>⌄</span></a><a href="#"><i>♙</i>전자자원구축<span>⌄</span></a><a href="#"><i>▱</i>파일시스템<span>⌄</span></a><a href="#"><i>▣</i>청용도서<span>⌄</span></a><a href="#"><i>▰</i>사법간행물<span>⌄</span></a><a href="#"><i>▥</i>통계<span>⌄</span></a><a href="#"><i>▣</i>시소러스관리<span>⌄</span></a><a href="#"><i>♙</i>시스템관리<span>⌄</span></a><a href="#"><i>⚙</i>환경설정<span>⌄</span></a>
+    </nav>
+  </aside>
+
+  <main class="person-workspace">
+    <header class="status-topbar">
+      <div class="status-breadcrumb">⌂ &nbsp; 저작권관리　›　인물정보관리　›　<strong>인물정보관리</strong></div>
+      <label class="status-search"><input type="search" placeholder="통합검색"><span>⌕</span></label>
+      <button>대법원열람실</button><div class="status-tools">♧　⇩　♧　<span>★</span>　⚙　□　▣　☰</div>
+    </header>
+    <div class="status-tabs" id="person-tabs"></div>
+
+    <section class="person-content">
+      <div class="person-filter"><label><strong>인물관리번호</strong><input placeholder="배부처검색"></label><label><strong>성명</strong><input placeholder="배부처검색"></label></div>
+      <div class="person-view-tools">◎　<span>⟳</span>　⌕　⌃</div>
+      <div class="person-board">
+        <section class="person-pane top-left" data-pane="a"></section>
+        <section class="person-pane top-right" data-pane="b"></section>
+        <section class="person-pane bottom-left" data-pane="c"></section>
+        <section class="person-pane bottom-right" data-pane="d"></section>
+      </div>
+    </section>
+  </main>
+
+  <template id="person-pane-template">
+    <div class="pane-toolbar">
+      <div class="person-tags"><button>법고을발송이력 ×</button><button>확인요청이력 ×</button><button>동명이인조사 ×</button></div>
+      <div class="pane-actions"><button>버튼 ×</button><button>수정 ×</button><button>삭제 ×</button></div>
+    </div>
+    <div class="person-grid-wrap">
+      <table class="person-table"><thead><tr><th><input type="checkbox"></th><th>순번</th><th>수서단계</th><th>대상관리번호</th><th>자료유형</th><th>서명 ↑</th><th>저자명</th></tr></thead><tbody></tbody></table>
+    </div>
+    <footer class="person-pagination"><span>건수 : <b>5건</b> / 153건</span><div>≪　‹　<strong>1</strong>　2　3　4　5　6　7　8　…　99　›　≫</div><label><input value="15">　⇩　♧</label></footer>
+    <nav class="person-subtabs"><a href="#">소장확인목록</a><a class="active" href="#">소장미확인목록</a><a href="#">미소장목록</a><a href="#">저작물/저작권등록목록</a><button>등록처리 ×</button></nav>
+  </template>
+  <script>
+    document.getElementById('person-tabs').innerHTML=Array.from({length:12},()=>'<span>메뉴명메뉴명　×</span>').join('')+'<b>▱　×</b>';
+    const tpl=document.getElementById('person-pane-template');
+    document.querySelectorAll('.person-pane').forEach((pane,paneIndex)=>{
+      pane.append(tpl.content.cloneNode(true));
+      pane.querySelector('tbody').innerHTML=Array.from({length:18},(_,i)=>`<tr class="${i===5?'selected':''} ${i===0?'alert-row':''}"><td><input type="checkbox" ${i===5?'checked':''}></td><td>${i===5||i===6?'12':'123'}</td><td>12143228</td><td>대상관리번호</td><td>자료유형</td><td>${i%6===3?'...　':''}Vol.1(창간호)</td><td>박경리</td></tr>`).join('');
+      if(paneIndex>0) pane.querySelector('.person-subtabs').remove();
+      if(paneIndex===0) pane.querySelector('.pane-actions').innerHTML='<button>버튼 ×</button><button>수정 ×</button><button>삭제 ×</button>';
+      if(paneIndex===1) pane.querySelector('.person-tags').innerHTML='<button>법고을발송이력 ×</button><button>확인요청이력 ×</button><button>동명이인조사 ×</button>';
+      if(paneIndex>1) pane.querySelector('.pane-toolbar').remove();
+    });
+    document.addEventListener('change',e=>{if(e.target.matches('.person-table tbody input'))e.target.closest('tr').classList.toggle('selected',e.target.checked)});
+  </script>
+</body>
+</html>

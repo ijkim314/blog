@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>악성 앱 탐지</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="security-page">
+  <main class="security-screen">
+    <div class="security-status" aria-label="상태 표시줄">
+      <time datetime="09:30">9:30</time>
+      <div class="android-status" aria-hidden="true">
+        <span class="status-wifi"></span>
+        <span class="status-signal"></span>
+        <span class="status-battery"></span>
+      </div>
+    </div>
+
+    <section class="security-content">
+      <h1>보이스피싱 위험이 있는<br>악성 앱이 탐지되었습니다</h1>
+      <p>출처불명의 이메일이나 SMS문자 링크를 통해 설치<br>된 악성앱(해킹, 전화가로채기, 은행사칭 등)으로 의<br>심됩니다.</p>
+      <p>안전한 금융거래를 위해 해당 앱을 삭제한 후 이용해<br>주세요.</p>
+
+      <form class="danger-app-form">
+        <fieldset>
+          <legend class="sr-only">삭제할 악성 앱 선택</legend>
+
+          <label class="danger-app-card is-selected">
+            <input type="checkbox" checked>
+            <span class="app-logo music" aria-hidden="true">♫</span>
+            <span class="app-info">
+              <strong>App name</strong>
+              <small>Com.fakefinder.sample_dangerCom<br>.fakefinder.sample_danger</small>
+            </span>
+            <span class="check-ui" aria-hidden="true"></span>
+          </label>
+
+          <label class="danger-app-card">
+            <input type="checkbox">
+            <span class="app-logo sparkle" aria-hidden="true"></span>
+            <span class="app-info">
+              <strong>App name</strong>
+              <small>Com.fakefinder.sample_danger</small>
+            </span>
+            <span class="check-ui" aria-hidden="true"></span>
+          </label>
+
+          <label class="danger-app-card">
+            <input type="checkbox">
+            <span class="app-logo game" aria-hidden="true">●●</span>
+            <span class="app-info">
+              <strong>App name</strong>
+              <small>Com.fakefinder.sample_danger</small>
+            </span>
+            <span class="check-ui" aria-hidden="true"></span>
+          </label>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer class="security-actions">
+      <button type="button" class="cancel-button">취소</button>
+      <button type="button" class="delete-button">삭제</button>
+    </footer>
+  </main>
+</body>
+</html>

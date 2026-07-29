@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스마트뱅킹 재가입</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="rejoin-page">
+  <main class="rejoin-screen">
+    <div class="rejoin-status" aria-label="상태 표시줄">
+      <time datetime="09:41">9:41</time>
+      <div class="rejoin-status-icons" aria-hidden="true"><span class="cell-bars">▂▄▆█</span><span class="status-wifi-mark"></span><span class="status-battery-mark"></span></div>
+    </div>
+
+    <header class="rejoin-header">
+      <button class="rejoin-back" type="button" aria-label="뒤로가기"></button>
+      <h1>스마트뱅킹</h1>
+      <button class="rejoin-menu" type="button" aria-label="전체 메뉴"><i></i></button>
+    </header>
+
+    <section class="rejoin-content">
+      <h2>해지 후, 스마트뱅킹<br>재가입을 진행합니다</h2>
+      <p class="rejoin-description">기존 공동인증서는 폐기되며, 스마트뱅킹 가입후<br>신규 공동인증서를 발급됩니다.</p>
+
+      <section class="certificate-section">
+        <h3>기업은행 발급폐기대상 인증서</h3>
+        <dl class="certificate-table">
+          <dt>발급은행</dt><dd>기업은행(003)</dd>
+          <dt>사용자</dt><dd>홍길동</dd>
+          <dt>발급기관</dt><dd>금융결제원</dd>
+          <dt>인증서종류</dt><dd>은행/신용카드/보험용</dd>
+          <dt>유효기간</dt><dd>YYYY.MM.DD</dd>
+          <dt>상태</dt><dd>만료</dd>
+        </dl>
+      </section>
+
+      <label class="agreement-box">
+        <input id="rejoin-agree" type="checkbox">
+        <span class="agreement-check" aria-hidden="true"></span>
+        <strong>본인은 유의사항을 제공 받고 그 내용을<br>충분히 이해함을 확인합니다.</strong>
+      </label>
+    </section>
+
+    <footer class="rejoin-footer">
+      <button id="rejoin-next" type="button" disabled>다음</button>
+    </footer>
+  </main>
+  <script>
+    const agree = document.getElementById('rejoin-agree');
+    const next = document.getElementById('rejoin-next');
+    agree.addEventListener('change', () => { next.disabled = !agree.checked; });
+  </script>
+</body>
+</html>

@@ -464,3 +464,94 @@ a {
         font-size: 18px;
     }
 }
+
+/* Hana Bank home */
+.hana-home-page { min-height: 100%; background: #e9ecef; color: #24272a; }
+.hana-home-page button, .hana-home-page a { -webkit-tap-highlight-color: transparent; }
+.hana-home { width: min(100%, 393px); min-height: 100vh; margin: 0 auto; padding: 17px 20px 98px; overflow: hidden; position: relative; background: linear-gradient(180deg,#ffe7ef 0 24%,#f3c8d5 36%,#f1f3f4 60%); }
+.home-status { height: 28px; display:flex; align-items:center; justify-content:space-between; padding:0 14px 0 33px; color:#050607; font-size:17px; font-weight:750; }
+.home-status-icons { display:flex; align-items:center; gap:8px; font-weight:800; }
+.home-status-icons .signal { font-size:12px; letter-spacing:-2px; }
+.home-status-icons .wifi { font-size:22px; transform:rotate(-45deg); display:inline-block; }
+.home-status-icons .battery { width:24px; height:12px; padding:1px; border:1px solid #777; border-radius:4px; position:relative; }
+.home-status-icons .battery:before { content:""; display:block; height:8px; width:19px; border-radius:2px; background:#050607; }
+.home-status-icons .battery:after { content:""; position:absolute; right:-3px; top:3px; width:2px; height:5px; background:#777; border-radius:0 2px 2px 0; }
+.home-header { height:65px; display:flex; align-items:center; justify-content:space-between; }
+.login-link { color:#222; font-size:16px; text-decoration:underline; text-underline-offset:4px; }
+.header-actions { display:flex; align-items:center; gap:14px; }
+.simple-mode { height:29px; padding:0 5px 0 2px; border:1px solid #858b8e; border-radius:7px; background:#fff; color:#4c5356; font-size:13px; box-shadow:0 1px 3px #c4b7bb; }
+.simple-mode span { display:inline-grid; place-items:center; width:22px; height:22px; margin-right:3px; border-radius:5px; color:#fff; background:#647074; }
+.circle-ai { width:23px; height:23px; padding:0; border:2px solid #111; border-radius:50%; background:transparent; font-size:11px; font-weight:800; }
+.bell { width:22px; height:22px; border:2px solid #111; border-radius:11px 11px 8px 8px; background:transparent; position:relative; }
+.bell:before { content:""; position:absolute; width:3px; height:3px; background:#111; border-radius:50%; left:8px; bottom:-5px; }
+.coupon-alert { height:45px; padding:0 14px 0 18px; border-radius:12px; background:rgba(255,255,255,.94); display:flex; align-items:center; gap:12px; position:relative; z-index:2; font-size:14px; }
+.coupon-alert button { margin-left:auto; border:0; padding:0; background:transparent; font-size:29px; line-height:1; font-weight:200; }
+.speaker { width:16px; height:13px; border:2px solid #ff5a77; border-right:0; border-radius:2px; position:relative; }
+.speaker:before { content:""; position:absolute; right:-6px; top:-5px; width:9px; height:19px; background:#ff5a77; clip-path:polygon(0 28%,100% 0,100% 100%,0 72%); }
+.hero { height:349px; margin:0 -20px; position:relative; display:flex; flex-direction:column; align-items:center; overflow:hidden; }
+.hero:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(255,232,239,.08),rgba(245,163,188,.7)); z-index:0; }
+.hero h1 { z-index:1; margin:67px 0 49px; font-size:21px; line-height:1.75; letter-spacing:-.8px; text-align:center; font-weight:600; }
+.hero h1 strong { font-size:24px; }
+.login-button { z-index:1; width:120px; height:42px; border:0; border-radius:24px; color:#fff; background:#00ab94; font-size:16px; box-shadow:0 8px 15px rgba(0,0,0,.08); }
+.blur-orb { position:absolute; z-index:1; border-radius:50%; filter:blur(4px); opacity:.55; background:radial-gradient(circle at 38% 34%,#fff 0 15%,#fadce5 40%,#ef7ea0 75%); }
+.orb-left { width:86px; height:86px; left:-42px; top:15px; }
+.orb-right { width:112px; height:153px; right:-51px; top:103px; border-radius:50% 50% 48% 52%; transform:rotate(-15deg); box-shadow:10px 24px 16px #d86386; }
+.white-card { background:#fff; border-radius:16px; box-shadow:0 5px 9px rgba(35,45,50,.06); }
+.account-link { height:60px; padding:0 19px; display:flex; align-items:center; justify-content:space-between; font-size:18px; }
+.account-link span,.section-title span { font-size:31px; font-weight:250; }
+.promo-row { display:flex; gap:13px; margin:16px 0; width:492px; }
+.promo { width:132px; height:132px; padding:20px 15px; flex:none; border-radius:16px; background:#fff; display:flex; flex-direction:column; box-shadow:0 5px 9px rgba(35,45,50,.06); overflow:hidden; }
+.promo strong { margin-top:auto; font-size:16px; white-space:nowrap; }
+.promo small { color:#6b737a; font-size:14px; margin-top:5px; }
+.promo-icon { font-style:normal; font-size:31px; line-height:1; }
+.pink { color:#ec4382; }.blue { color:#159bd2; }.gift { position:relative; font-size:16px; }.gift strong { margin:0; line-height:1.5; }.gift-art { font-size:58px; position:absolute; right:0; bottom:-4px; transform:rotate(-13deg); }
+.quick-menu { padding:27px 16px 17px; margin-bottom:16px; }
+.quick-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px 6px; }
+.quick-grid a { display:flex; align-items:center; flex-direction:column; gap:8px; color:#222; text-decoration:none; font-size:14px; font-weight:600; white-space:nowrap; }
+.line-icon { height:27px; font-size:24px; font-style:normal; font-weight:700; }.mint{color:#00a990}.orange{color:#ff5a00}.coral{color:#f24c6d}.dark{color:#3c4751}.gold{color:#a27e00}
+.menu-settings { width:100%; margin-top:31px; padding-top:13px; border:0; border-top:1px solid #e5e5e5; background:transparent; color:#66727a; font-size:14px; }
+.group-card { padding:19px 20px 24px; margin-bottom:16px; overflow:hidden; }
+.section-title { display:flex; align-items:center; justify-content:space-between; }.section-title h2,.asset-card h2 { margin:0; font-size:19px; }
+.chips { display:flex; gap:7px; margin:15px 0; width:max-content; }.chips button { height:33px; padding:0 12px; border:1px solid #bdc3c6; border-radius:7px; background:#fff; font-size:14px; }
+.group-banner { height:115px; padding:19px 20px; border-radius:16px; background:#f5f6f7; display:flex; justify-content:space-between; align-items:center; }
+.group-banner div { display:flex; flex-direction:column; gap:6px; }.group-banner em { width:max-content; padding:2px 5px; border:1px solid #00aa91; border-radius:10px; color:#00a48e; font-size:12px; font-style:normal; }.group-banner small { color:#677179; }.group-banner strong { font-size:16px; }.box-art { width:45px; height:45px; display:grid; place-items:center; color:white; background:linear-gradient(145deg,#18ccb0,#008e78); font-size:25px; font-weight:700; transform:rotate(12deg); box-shadow:6px 5px #9ce4d7; }
+.asset-card { padding:25px 20px 21px; margin-bottom:37px; }.asset-card>div { display:flex; justify-content:space-between; align-items:center; }.asset-card p { margin:14px 0 0; font-size:16px; line-height:1.6; }.asset-card button { height:34px; padding:0 14px; border:0; border-radius:8px; color:#009b87; background:#e1f3f0; font-size:14px; }
+.privacy { display:block; margin-bottom:42px; color:#68727a; text-align:center; text-underline-offset:4px; font-size:14px; }
+.bottom-nav { position:absolute; left:0; right:0; bottom:0; height:88px; padding:14px 27px 10px; display:flex; justify-content:space-between; border-radius:22px 22px 0 0; background:#fff; box-shadow:0 -3px 12px rgba(0,0,0,.03); }
+.bottom-nav a { min-width:38px; display:flex; align-items:center; flex-direction:column; gap:5px; color:#68747c; text-decoration:none; font-size:11px; }.bottom-nav i { height:25px; font-size:21px; font-style:normal; }.bottom-nav .active { color:#050505; font-weight:700; }
+@media (max-width:360px){.hana-home{padding-inline:14px}.hero{margin-inline:-14px}.promo-row{gap:10px}.promo{width:122px}.bottom-nav{padding-inline:18px}}
+
+/* Malicious app detection */
+.security-page { min-height:100%; margin:0; color:#252a2e; background:#e9eff0; font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+.security-screen { width:min(100%,393px); min-height:100vh; margin:0 auto; padding:0 20px 118px; position:relative; background:#fff; }
+.security-status { height:42px; display:flex; align-items:center; justify-content:space-between; padding:0 12px 0 1px; color:#2a2d30; font-size:13px; font-weight:650; }
+.android-status { height:18px; display:flex; align-items:center; gap:5px; }
+.status-wifi { width:15px; height:11px; background:#e2e6e8; clip-path:polygon(0 0,100% 0,50% 100%); border-radius:7px 7px 0 0; }
+.status-signal { width:13px; height:13px; background:#292d30; clip-path:polygon(100% 0,100% 100%,0 100%); }
+.status-battery { width:7px; height:12px; margin-left:1px; border-radius:1px; background:linear-gradient(#aab0b3 0 26%,#3b3f41 27%); }
+.security-content { padding-top:79px; }
+.security-content h1 { margin:0 0 14px; color:#22272a; font-size:23px; line-height:1.46; letter-spacing:-1px; font-weight:750; }
+.security-content>p { margin:0 0 24px; color:#5d6874; font-size:16px; line-height:1.55; letter-spacing:-.5px; }
+.danger-app-form { margin-top:39px; }
+.danger-app-form fieldset { display:grid; gap:17px; margin:0; padding:0; border:0; }
+.sr-only { width:1px; height:1px; padding:0; margin:-1px; position:absolute; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.danger-app-card { min-height:96px; padding:19px 19px; display:flex; align-items:flex-start; gap:9px; border:1px solid #dfe4e7; border-radius:16px; background:#fff; cursor:pointer; }
+.danger-app-card.is-selected { min-height:117px; border:2px solid #00a88e; padding:20px 18px; }
+.danger-app-card input { position:absolute; opacity:0; pointer-events:none; }
+.app-logo { width:28px; height:28px; flex:0 0 28px; display:grid; place-items:center; border-radius:8px; color:#fff; font-weight:800; }
+.app-logo.music { background:#f44262; font-size:22px; line-height:1; }
+.app-logo.sparkle { border:1px solid #eef1f3; border-radius:50%; position:relative; }
+.app-logo.sparkle:before,.app-logo.sparkle:after { content:""; position:absolute; inset:4px 10px; background:linear-gradient(#f64075,#f0b000,#13b2cd); clip-path:polygon(50% 0,65% 35%,100% 50%,65% 65%,50% 100%,35% 65%,0 50%,35% 35%); }
+.app-logo.sparkle:after { inset:10px 4px; transform:rotate(90deg); }
+.app-logo.game { color:#fff; background:#5865f2; font-size:8px; letter-spacing:3px; position:relative; }
+.app-logo.game:after { content:""; position:absolute; left:6px; right:6px; bottom:6px; height:4px; border-bottom:2px solid white; border-radius:50%; }
+.app-info { min-width:0; display:flex; flex-direction:column; gap:4px; }
+.app-info strong { font-size:17px; line-height:1.25; font-weight:500; }
+.app-info small { color:#637080; font-size:14px; line-height:1.5; letter-spacing:-.2px; overflow-wrap:anywhere; }
+.check-ui { width:20px; height:20px; margin-left:auto; flex:0 0 20px; border:1.5px solid #8d969d; border-radius:4px; position:relative; }
+.danger-app-card input:checked~.check-ui { border-color:#00a88e; background:#00a88e; }
+.danger-app-card input:checked~.check-ui:after { content:""; position:absolute; left:5px; top:2px; width:6px; height:10px; border:solid #fff; border-width:0 2px 2px 0; transform:rotate(45deg); }
+.security-actions { height:94px; padding:16px 20px 18px; position:absolute; z-index:2; left:0; right:0; bottom:0; display:grid; grid-template-columns:1fr 1fr; gap:13px; background:#fff; }
+.security-actions button { height:56px; border:0; border-radius:12px; font-size:16px; font-weight:650; }
+.cancel-button { color:#008f7f; background:#e0f3f1; }.delete-button { color:#fff; background:#00a88e; }
+@media (max-width:360px){.security-screen{padding-inline:16px}.security-content{padding-top:60px}.security-actions{padding-inline:16px}.danger-app-form{margin-top:28px}.app-info small{font-size:13px}}

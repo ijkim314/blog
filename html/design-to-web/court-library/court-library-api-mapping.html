@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API 매핑</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="api-mapping-page">
+  <main class="api-dialog" role="dialog" aria-labelledby="api-dialog-title">
+    <header class="api-dialog-header">
+      <h1 id="api-dialog-title">API 매핑</h1>
+      <button type="button" class="dialog-close" aria-label="닫기"></button>
+    </header>
+
+    <div class="api-dialog-body">
+      <section class="selected-api">
+        <div class="api-section-heading">
+          <h2>선택된 API key</h2>
+          <div><button type="button">버튼 <span>×</span></button><button type="button">버튼 <span>×</span></button></div>
+        </div>
+        <dl class="api-summary">
+          <dt>API KEY <b>*</b></dt><dd>abc123!@#***-***-***-2fksu4w2</dd>
+          <dt>API KEY 별칭 <b>*</b></dt><dd>운영키-01</dd>
+          <dt>연계시스템명 <b>*</b></dt><dd>법원전자도서관</dd>
+          <dt>환경구분 <b>*</b></dt><dd>운영</dd>
+        </dl>
+      </section>
+
+      <div class="mapping-workspace">
+        <section class="api-list-panel">
+          <div class="api-section-heading">
+            <h2>API 목록</h2>
+            <div><button type="button">버튼 <span>×</span></button><button type="button">버튼 <span>×</span></button></div>
+          </div>
+          <div class="list-box">
+            <div class="list-filters">
+              <label><strong>API 명</strong><input type="search" placeholder="검색어를 입력해 주세요"></label>
+              <label><strong>서비스도메인</strong><input type="search" placeholder="전체/검색/.../기타"></label>
+            </div>
+            <div class="api-grid-scroll">
+              <table class="mapping-table">
+                <thead><tr><th><input type="checkbox" aria-label="전체 선택"></th><th>API ID</th><th>연계API명</th><th>버전</th><th>서비스도메인</th></tr></thead>
+                <tbody id="available-api-rows"></tbody>
+              </table>
+            </div>
+            <div class="fake-scrollbar"><span></span></div>
+          </div>
+        </section>
+
+        <div class="mapping-arrows" aria-label="API 이동">
+          <button type="button" id="map-add" aria-label="매핑 목록으로 이동">›</button>
+          <button type="button" id="map-remove" aria-label="API 목록으로 이동">‹</button>
+        </div>
+
+        <section class="api-list-panel mapped-panel">
+          <div class="api-section-heading">
+            <h2>매핑된API 목록</h2>
+            <div><button type="button">버튼 <span>×</span></button><button type="button">버튼 <span>×</span></button></div>
+          </div>
+          <div class="list-box">
+            <div class="api-grid-scroll mapped-grid-scroll">
+              <table class="mapping-table">
+                <thead><tr><th><input type="checkbox" aria-label="전체 선택"></th><th>API ID</th><th>연계API명</th><th>버전</th><th>서비스도메인</th></tr></thead>
+                <tbody id="mapped-api-rows"></tbody>
+              </table>
+            </div>
+            <div class="fake-scrollbar"><span></span></div>
+          </div>
+          <p class="mapping-count">API 매핑 수 : <strong>100</strong></p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="api-dialog-footer">
+      <button class="api-save" type="button"><span>×</span> 저장 <span>×</span></button>
+      <button class="api-cancel" type="button"><span>×</span> 닫기 <span>×</span></button>
+    </footer>
+  </main>
+  <script>
+    const row = (id, domain, checked = false) => `<tr class="${checked ? 'selected' : ''}"><td><input type="checkbox" ${checked ? 'checked' : ''}></td><td>${id}</td><td>판례원문 다운로드</td><td>V1.0</td><td>${domain}</td></tr>`;
+    document.getElementById('available-api-rows').innerHTML = Array.from({length: 15}, (_, i) => row(i === 1 ? '1000003' : '1000002', i === 1 ? '수서' : '검색', i === 1)).join('');
+    document.getElementById('mapped-api-rows').innerHTML = Array.from({length: 13}, (_, i) => row(i === 1 ? '1000003' : '1000002', i === 1 ? '수서' : '검색', i === 1)).join('');
+    document.addEventListener('change', event => {
+      if (event.target.matches('.mapping-table tbody input')) event.target.closest('tr').classList.toggle('selected', event.target.checked);
+    });
+  </script>
+</body>
+</html>
