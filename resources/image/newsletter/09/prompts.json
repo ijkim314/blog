@@ -1,0 +1,41 @@
+{
+  "tool": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "001.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: An elevated browser modal window above a dimmed page, clear close cross and a small escape key, illustrating HTML dialog dismissal."
+    },
+    {
+      "file": "002.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: A tactile push button connected by a clean luminous curved line to an opening browser dialog, illustrating declarative command control."
+    },
+    {
+      "file": "003.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: A small floating information bubble beside a larger open dropdown panel, both visible together, illustrating non-disruptive hint popovers."
+    },
+    {
+      "file": "004.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: An elegant expanded native select dropdown with three colored swatch options and one selected checkmark, illustrating customizable select."
+    },
+    {
+      "file": "005.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: Three stacked accordion panels, only the middle expanded showing abstract text lines, illustrating exclusive details groups."
+    },
+    {
+      "file": "006.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: A bright active interface panel beside muted inactive interface tiles behind a translucent barrier, a focus ring stays on the active panel, illustrating inert."
+    },
+    {
+      "file": "007.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: Four tactile arrow keyboard keys in front of a horizontal three-button toolbar with a strong visible focus outline, illustrating focusgroup keyboard navigation."
+    },
+    {
+      "file": "008.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: A pointer and a keyboard focus ring converging on one information button with a floating helpful preview card, illustrating interest invokers."
+    },
+    {
+      "file": "009.png",
+      "prompt": "Use case: stylized-concept. Asset type: editorial thumbnail for a Korean web accessibility developer newsletter. Create one polished landscape 3:2 raster illustration, consistent minimal tactile 3D paper-and-ceramic style, off-white backdrop, dark navy outlines, cobalt blue primary accent with small mint accents, soft studio shadows, generous margins, one clear central composition readable at 200px width. No text, letters, numbers, logos or watermark. Not a collage. Subject: Three nested interface cards with descending heading bars linked by a clear stepped hierarchy, illustrating heading offsets in reusable components."
+    }
+  ]
+}
