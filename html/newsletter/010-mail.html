@@ -58,7 +58,7 @@
                                     <td style="padding:0 0 24px;">
                                         <p style="margin:0; font-size:14px; line-height:1.6; color:#222;">
                                             상태를 감지하고, 요소의 위치를 계산하고, 스크롤에 맞춰 애니메이션을 재생하던 코드가 점점 CSS로 옮겨가고 있습니다.<br />
-                                            이번 달에는 JavaScript 의존도를 줄여 주는 CSS 기능 8가지를 실무 활용 관점에서 살펴봅니다.
+                                            이번 달에는 JavaScript 의존도를 줄여 주는 CSS 기능 9가지를 실무 활용 관점에서 살펴봅니다.
                                         </p>
                                     </td>
                                 </tr>
@@ -85,8 +85,8 @@
                                         <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
                                             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has"
                                                 target="_blank" rel="noopener noreferrer"
-                                                style="color:#0b3cc1; text-decoration:underline;">자식 상태에 따른 부모 스타일링은
-                                                :has()로</a>
+                                                style="color:#0b3cc1; text-decoration:underline;">부모 찾기와 상태 반영은
+                                                :has()</a>
                                         </h3>
                                         <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">자식 요소의 상태에 따라
                                             부모나 앞선 형제를
@@ -182,7 +182,7 @@
                                                 CSS 안에서 선택하기</a>
                                         </h3>
                                         <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
-                                            CSS if()로 미디어 조건·기능 지원 여부·스타일 조건에 따라 속성 값을 선택합니다.
+                                            CSS if()로 미디어·지원·스타일 조건에 따라 속성 값을 선택합니다.
                                             조건별 클래스를 JavaScript로 붙이거나 동일한 선언을 여러 규칙으로 나누는 코드를 줄일 수 있습니다.</p>
                                     </td>
                                     <td valign="top" width="25%"
@@ -205,7 +205,7 @@
                                         </h3>
                                         <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
                                             @starting-style과
-                                            transition-behavior: allow-discrete를 조합해 팝오버와 &lt;dialog&gt;의 등장·퇴장 효과를 만듭니다. 애니메이션용
+                                            transition-behavior: allow-discrete를 조합해 팝오버와 dialog의 등장·퇴장 효과를 만듭니다. 애니메이션용
                                             클래스를 넣고 빼는 코드를 줄여 줍니다.</p>
                                     </td>
                                     <td valign="top" width="25%"
@@ -256,8 +256,6 @@
                                     </td>
                                 </tr>
                             </table>
-
-
                             <!-- ===== CSS 카드 안내 ===== -->
 
 
@@ -315,7 +313,7 @@
                                                             Hotkeys</a>
                                                     </h3>
                                                     <p style="margin:0; font-size:13px; color:#444;">
-                                                        키 조합과 연속 입력, 키 상태 추적, 단축키 기록을 지원하며 React 등과 연결할 수 있는 타입 안전성을 갖춘 단축키
+                                                        키 조합과 연속 입력, 키 상태 추적, 단축키 기록을 지원하며 React 등과 연결할 수 있는 타입 안전 단축키
                                                         라이브러리
                                                     </p>
                                                 </td>
@@ -451,7 +449,7 @@
                                                         style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
                                                         React 코드 추천</p>
                                                     <p style="margin:0; font-size:12px; line-height:1.6; color:#555;">
-                                                        화면 전환과 폼 등 퍼블리싱 작업에 바로 연결되는 React 구현을 골랐습니다.
+                                                        화면 전환과 폼처럼 퍼블리싱 작업에 바로 연결되는 React 구현을 골랐습니다.
                                                     </p>
                                                 </td>
                                             </tr>
@@ -472,7 +470,7 @@
                                                     <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
                                                         컴포넌트의 등장·퇴장·업데이트를 브라우저 View Transition과 연결합니다. React가 전환 시점과 이름을
                                                         조율하므로,
-                                                        페이지 이동이나 목록 변화에 CSS 전환 스타일을 구성하는 구조를 단순하게 만들 수 있습니다.
+                                                        페이지 이동이나 목록 변화에 CSS 전환 클래스를 적용하는 구조를 단순하게 만들 수 있습니다.
                                                     </p>
                                                 </td>
                                             </tr>
@@ -565,9 +563,9 @@
                                         <div style="font-size:13px; line-height:1.7; color:#333;">
                                             <p style="margin:0 0 18px;">
                                                 이번에는 SVG 작업에 활용할 수 있는 도구와 자료를 소개하려고 합니다.
-                                                SVG는 아이콘이나 로고에 자주 사용하는 벡터 이미지 형식이지만, 글자가 타이핑되거나 손으로 그린 선이
-                                                움직이는 효과도 표현할 수 있습니다. 번거로운 작업을 간단하게 만들어 주는 공개 도구들은
-                                                직접 구현해야 할 작업을 줄이는 데 도움이 됩니다.
+                                                SVG는 아이콘이나 로고에 자주 사용하는 이미지 형식이지만, 글자가 타이핑되거나 손으로 그린 선이
+                                                움직이는 효과도 표현할 수 있습니다. 작은 기능 하나를 편리하게 만들어 공개한 도구들을 보면,
+                                                평소 직접 구현하기에는 조금 번거로웠던 작업을 줄이는 데 도움이 되겠다는 생각이 듭니다.
                                             </p>
 
                                             <h4 style="margin:0 0 8px; font-size:14px; font-weight:700; color:#222;">
@@ -582,7 +580,7 @@
                                             <p style="margin:0 0 18px;">
                                                 이렇게 SVG 자체에 포함된 애니메이션은 웹페이지에서 <code>&lt;img&gt;</code>로 불러와도 표현할 수 있습니다.
                                                 타이핑 효과를 위해 페이지에 별도의 스크립트를 작성하지 않아도 된다는 점이 편리합니다.
-                                                다만 생성된 외부 URL을 그대로 사용할지, 파일로 저장해 프로젝트에서 관리할지는 구분해서 생각해야 합니다.
+                                                다만 외부 생성 주소를 그대로 사용할지, 파일로 저장해 프로젝트에서 관리할지는 구분해서 생각해야 합니다.
                                             </p>
 
                                             <h4 style="margin:0 0 8px; font-size:14px; font-weight:700; color:#222;">손으로
@@ -643,7 +641,7 @@
                                                 외부 파일을 불러오는 조건에는 제약이 있어, 프로젝트에 맞는 구조인지 살펴봐야 합니다.
                                             </p>
                                             <p style="margin:0 0 18px;">
-                                                Fotis Papadogeorgopoulos의
+                                                Fotis의
                                                 <a href="https://go.sparkpostmail2.com/f/a/2m7iIbz2clJ1Fw0WtA6LIg~~/AABEfhA~/_gmS4A3OKaqPfTRNEl8mIYjzFFa_T5R58i6OWoQYDwyuqO59HxvKr08FCbOTRKeSVImR9pqkb7Sgxbcq6TXKsnb7qvHfVHyb5ZFepCRiiqySKaIYsvrJWISbc_4ZV2IA"
                                                     target="_blank" rel="noopener noreferrer"
                                                     style="color:#0b3cc1; text-decoration:underline;"><code>@svg-use</code></a>는
