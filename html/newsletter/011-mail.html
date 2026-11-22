@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>11월 뉴스레터 · 아직 낯설지만 곧 익숙해질 웹 코드</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 0 !important;
+            outline: none !important;
+            border-collapse: collapse !important;
+            border-spacing: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+        style="border-collapse:collapse;">
+        <tr>
+            <td align="center" style="padding:24px 0;">
+                <!-- 메인 컨테이너 -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="860" style="
+              width:860px;
+              max-width:860px;
+              background:#ffffff;
+              border-collapse:collapse;
+            ">
+                    <!-- 헤더 배너 -->
+                    <tr>
+                        <td align="left" style="padding:18px 0 12px;">
+                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/logo-transparent.png"
+                                width="520" alt="Code Insight"
+                                style="display:block; width:100%; max-width:520px; height:auto; border:0; outline:none; text-decoration:none;" />
+                        </td>
+                    </tr>
+
+                    <!-- 본문 패딩 래퍼 -->
+                    <tr>
+                        <td style="padding:24px 0px 40px 10px;">
+                            <!-- 인트로 -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse;">
+                                <tr>
+                                    <td style="padding:0 0 12px;">
+                                        <h1
+                                            style="margin:0; font-size:22px; line-height:1.3; font-weight:700; color:#222;">
+                                            아직 100%는 아니지만, 지금 주목할 웹 코드
+                                        </h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 24px;">
+                                        <p style="margin:0; font-size:14px; line-height:1.6; color:#222;">
+                                            모든 브라우저에서 안심하고 쓰기에는 이르지만, 웹 개발의 다음 기본값이 될 기능들이 빠르게 등장하고 있습니다.<br />
+                                            이번 달에는 폴백과 기능 감지를 곁들이며 미리 실험해 볼 HTML·CSS·JavaScript 기능 8가지를 골랐습니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== 미래 웹 카드: 4열 × 2행 ===== -->
+
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; table-layout:fixed;">
+                                <tr>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/001.png"
+                                                width="200" alt="HTML과 CSS로 자유롭게 꾸미는 선택 메뉴"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            HTML · CUSTOMIZABLE SELECT</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">네이티브 select를 원하는
+                                                모습으로</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            appearance: base-select와 &lt;selectedcontent&gt;로 옵션에 아이콘과 레이아웃을 넣습니다. 기존
+                                            select 의미와 키보드 조작을 유지하면서 커스텀 UI를 만들 수 있습니다.</p>
+                                    </td>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using_interest_invokers"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/002.png"
+                                                width="200" alt="포인터와 키보드 포커스로 열리는 관심 팝오버"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            HTML · INTEREST INVOKERS</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using_interest_invokers"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">툴팁을 여는 interestfor</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            interestfor 속성으로 hover와 키보드 포커스에 반응하는 팝오버를 선언합니다. 지연 시간도 CSS로 조절해 툴팁 이벤트 코드를
+                                            크게 줄일 수 있습니다.</p>
+                                    </td>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.chrome.com/blog/if-article" target="_blank"
+                                            rel="noopener noreferrer" style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/004.png"
+                                                width="200" alt="조건에 따라 다른 값을 선택하는 CSS if 함수"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            CSS · IF()</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.chrome.com/blog/if-article" target="_blank"
+                                                rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">조건문을 CSS 속성 값 안으로</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            if(style(), media(), supports())로 조건에 맞는 속성 값을 고릅니다. 같은 선언을 여러 규칙에 반복하지 않고
+                                            한곳에서 테마와 기능 지원을 분기할 수 있습니다.</p>
+                                    </td>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.chrome.com/docs/modern-web-guidance/guides/css/dynamic-sibling-styling"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/005.png"
+                                                width="200" alt="형제의 순서와 개수로 계산한 계단식 애니메이션"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            CSS · SIBLING-INDEX()</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.chrome.com/docs/modern-web-guidance/guides/css/dynamic-sibling-styling"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">형제 순서와 개수를 CSS에서
+                                                계산하기</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            sibling-index()와 sibling-count()로 목록의 순번과 전체 개수를 얻습니다. nth-child 반복이나 인라인
+                                            변수를 만들지 않고 지연·색상·배치를 계산합니다.</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; table-layout:fixed;">
+                                <tr>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.chrome.com/blog/scroll-triggered-animations"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/006.png"
+                                                width="200" alt="요소가 화면에 들어오면 시작되는 CSS 애니메이션"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            CSS · SCROLL-TRIGGERED</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.chrome.com/blog/scroll-triggered-animations"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">IntersectionObserver
+                                                없이 등장 효과</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            timeline-trigger와 animation-trigger로 요소가 특정 스크롤 경계를 지날 때 시간 기반 애니메이션을 재생합니다.
+                                            아직은 IntersectionObserver 폴백이 필요합니다.</p>
+                                    </td>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/007.png"
+                                                width="200" alt="시간대와 달력 계산을 명확하게 표현하는 Temporal"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            JAVASCRIPT · TEMPORAL</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">Date의 오래된 함정을 벗어나는
+                                                Temporal</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            Temporal.PlainDate와 ZonedDateTime으로 날짜, 시간대, 기간 계산을 명확히 분리합니다. 네이티브 지원 전에는
+                                            공식 폴리필로 API를 먼저 익혀 볼 만합니다.</p>
+                                    </td>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Resource_management"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/008.png"
+                                                width="200" alt="블록을 벗어나며 자동으로 정리되는 JavaScript 리소스"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            JAVASCRIPT · USING</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Resource_management"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">using으로 리소스 정리를
+                                                자동화하기</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            using과 await using은 블록을 벗어날 때 Symbol.dispose를 호출합니다. 파일·락·연결처럼 반드시 닫아야 하는
+                                            리소스의 try/finally 중첩을 줄여 줍니다.</p>
+                                    </td>
+                                    <td valign="top" width="25%"
+                                        style="padding:0 10px 28px 0; overflow-wrap:break-word;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator/map"
+                                            target="_blank" rel="noopener noreferrer"
+                                            style="display:block; margin:0 0 10px;">
+                                            <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/2026/10/009.png"
+                                                width="200" alt="중간 배열 없이 이어지는 지연 평가 이터레이터"
+                                                style="display:block; width:100%; height:auto; border:0; border-radius:6px;" />
+                                        </a>
+                                        <div
+                                            style="font-size:10px; line-height:1.5; letter-spacing:0.3px; color:#555; margin:0 0 6px;">
+                                            JAVASCRIPT · ITERATOR HELPERS</div>
+                                        <h3 style="margin:0 0 8px; font-size:14px; line-height:1.5; font-weight:700;">
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator/map"
+                                                target="_blank" rel="noopener noreferrer"
+                                                style="color:#0b3cc1; text-decoration:underline;">이터레이터도
+                                                map·filter·take로</a>
+                                        </h3>
+                                        <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                            Iterator.map(), filter(), take()는 중간 배열 없이 값을 지연 처리합니다. 최신 브라우저에는 들어왔지만 구형
+                                            환경을 고려해 빌드 타깃과 폴리필을 확인하세요.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- ===== CSS 카드 안내 ===== -->
+
+
+                            <!-- ===== Resources(helps) ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:8px;">
+                                <tr>
+                                    <td style="padding:0;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:20px; background:#f5f5f5;">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Resources</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        작업에 도움이 되는 사이트와 도구를 소개합니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://developer.chrome.com/docs/modern-web-guidance?utm_source=CSS-Weekly&amp;utm_campaign=Issue-640&amp;utm_medium=web&amp;hl=ko"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">Modern Web
+                                                            Guidance</a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        최신 웹 기능의 활용법과 폴백 전략을 실제 구현 패턴으로 정리한 Chrome 개발자 가이드
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://www.bram.us/2026/10/14/scroll-triggered-animations-debugger-devtools-extension/?utm_source=CSS-Weekly&amp;utm_campaign=Issue-640&amp;utm_medium=web"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">Scroll-Triggered
+                                                            Animations Debugger</a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        CSS 스크롤 트리거의 범위와 활성 상태를 시각적으로 점검할 수 있는 DevTools 확장 프로그램
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://web-platform-dx.github.io/web-features-explorer/newly-available/?utm_source=CSS-Weekly&amp;utm_campaign=Issue-631&amp;utm_medium=web"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">Web
+                                                            Features
+                                                            Explorer</a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        주요 브라우저에서 새롭게 Baseline을 달성한 웹 기능과 지원 시점을 한눈에 확인하는 탐색 도구
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:16px 0 0;">
+                                                    <h3 style="margin:0 0 4px; font-size:14px; font-weight:700;">
+                                                        <a href="https://github.com/ddoemonn/react-beautiful-color?utm_source=CSS-Weekly&amp;utm_campaign=Issue-631&amp;utm_medium=web"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">React
+                                                            Beautiful
+                                                            Color</a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; color:#444;">
+                                                        React 애플리케이션에서 색상 선택 UI를 구성할 수 있는 컬러 피커 컴포넌트 라이브러리
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== CodePen 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:35px; padding-right:12px;">
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/logo-codepen.png"
+                                                        alt="CodePen"
+                                                        style="display:block; width:35px; height:auto; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        CodePen 데모</p>
+                                                    <p style="margin:0; font-size:12px; line-height:1.6; color:#555;">
+                                                        데모를 살펴보며 아이디어가 코드로 구현되는 과정을 확인하세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse; margin-top:18px;">
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/Taluska/pen/01a04281-8c8a-7f6c-a6e0-f9e2e3fcd2c7"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            CSS Sunset with SVG Filter
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        CSS와 SVG 필터를 조합해 노을의 색감과 빛 번짐을 표현한 데모입니다. Chromium에서 필터가
+                                                        렌더링되는 방식과 시각 효과의 조합을 살펴보세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/collinsworth/pen/01a0395c-56cb-7c4a-bcb1-8069254d32f5"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">sibling-index()
+                                                            Staggered Animations
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        CSS sibling-index()로 각 요소의 순번을 계산해 애니메이션 시작 시간을 엇갈리게 만듭니다.
+                                                        반복되는 nth-child 규칙 없이 계단식 동작을 구성하는 방법을 확인하세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/vii120/pen/01a0257f-5651-70ee-8195-5911e63bad98"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            Scroll-Driven 3D Spiral
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        스크롤 진행률에 맞춰 3D 나선 구조가 회전하고 이동하는 데모입니다. CSS 공간 변환과
+                                                        scroll-driven animation을 결합하는 방식을 살펴보세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://codepen.io/collection/bGaOLW?cursor=eyJwYWdlIjoxfQ=="
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            CodePen Challenge: Email Signatures
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        이메일 서명을 주제로 만든 여러 디자인과 구현을 모은 CodePen 컬렉션입니다. 프로필, 연락처,
+                                                        소셜 링크와 브랜드 요소를 제한된 공간에 어떻게 구성하는지 비교해 보세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://codepen.io/editor/grauconejo13/pen/01a19f17-72ac-7126-af68-406e31973978?utm_source=CSS-Weekly&amp;utm_campaign=Issue-640&amp;utm_medium=web"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            Higanbana — Flower of the Other Shore
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        피안화를 주제로 HTML, CSS, JavaScript를 조합해 만든 인터랙티브 아트 데모입니다. 섬세한
+                                                        형태와 분위기 있는 움직임을 웹 그래픽으로 표현하는 방식을 살펴보세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== React 코드 추천 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:35px; padding-right:12px;">
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/logo-react.png"
+                                                        alt="React"
+                                                        style="display:block; width:35px; height:auto; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        React 코드 추천</p>
+                                                    <p style="margin:0; font-size:12px; line-height:1.6; color:#555;">
+                                                        스타일링, 화면 전환, 접근성처럼 퍼블리싱 작업에 바로 연결되는 React 구현을 골랐습니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse; margin-top:18px;">
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://stylexjs.com/docs/learn/" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            StyleX로 타입 안전한 스타일 시스템 만들기
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        StyleX는 충돌 없는 atomic CSS를 빌드 시점에 생성하고 스타일의 병합 순서를 예측 가능하게
+                                                        유지합니다. React 컴포넌트에서 조건부 스타일과 디자인 토큰을 타입 안전하게 조합할 때 참고하기 좋습니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://react.dev/reference/react/ViewTransition"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            React &lt;ViewTransition&gt;으로 화면 전환 연결하기
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        컴포넌트의 등장·퇴장·업데이트를 브라우저 View Transition과 연결합니다. React가 전환 시점과
+                                                        이름을 조율하므로 페이지 이동, 목록 변화, 공유 요소 전환을 CSS 애니메이션으로 구성하기 쉬워집니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0 0 18px;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://bamboocss.com/docs/overview/getting-started/?ck_subscriber_id=4154964961&amp;utm_source=convertkit&amp;utm_medium=email&amp;utm_campaign=This%20Week%20In%20React%20%23296%3A%20React%2019.3%2C%20DevTools%2C%20Next.js%2C%20cn%2C%20Maps%2C%20Effective-RSC%2C%20Vidact%2C%20uf%20%7C%200.88%20RC%2C%20Expo%20Modules%2C%20Navigation%20Benchmarks%2C%20QuickJS%2C%20Goldie%2C%20ContinuedTask%20%7C%20Rslib%2C%20Vitest%2C%20gpu-lexer%2C%20Ata%2C%20Interop%20-%2023245257"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            Bamboo CSS로 타입 안전한 스타일링 시작하기
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        Bamboo는 스타일 호출을 빌드 시점에 공유 atomic CSS로 변환하는 zero-runtime CSS-in-JS입니다.
+                                                        디자인 토큰, 레시피와 변형을 타입 안전하게 작성하고 사용하지 않는 CSS를 제거할 수 있습니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0;">
+                                                    <h3
+                                                        style="margin:0 0 5px; font-size:14px; line-height:1.5; font-weight:700;">
+                                                        <a href="https://github.com/vercel/satori" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            style="color:#0b3cc1; text-decoration:underline;">
+                                                            Satori로 최신 CSS가 적용된 OG 이미지 만들기
+                                                        </a>
+                                                    </h3>
+                                                    <p style="margin:0; font-size:13px; line-height:1.7; color:#444;">
+                                                        React 형태의 마크업을 SVG 이미지로 변환하는 Satori가 backdrop-filter, SVG
+                                                        filter,
+                                                        HarfBuzz 텍스트 셰이핑 등 표현 범위를 넓히고 있습니다. Next.js 소셜 카드와 동적 배너 제작에 활용해
+                                                        보세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- ===== 에디터 섹션 ===== -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="border-collapse:collapse; margin-top:32px;">
+                                <tr>
+                                    <td style="padding-top:24px; border-top:1px solid #ddd;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="top" style="width:50px; padding-right:12px;">
+                                                    <img src="https://wtnflhyodwsemszwhjrs.supabase.co/storage/v1/object/public/images/character.png"
+                                                        alt="편집자 프로필 이미지"
+                                                        style="display:block; width:50px; height:50px; border-radius:50%; border:0;" />
+                                                </td>
+                                                <td valign="top">
+                                                    <p
+                                                        style="margin:0 0 4px; font-size:14px; font-weight:700; color:#222;">
+                                                        Kim's Focus</p>
+                                                    <p style="margin:0; font-size:12px; color:#555;">
+                                                        편집자의 작업 경험과 고민을 나눕니다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr style="border:0; border-top:1px solid #ddd; margin:18px 0;" />
+
+                                        <h3 style="margin:0 0 10px; font-size:16px; font-weight:700; color:#222;">
+                                            같은 색도 다르게 이어집니다, CSS 그라디언트와 색 공간
+                                        </h3>
+
+                                        <div style="font-size:13px; line-height:1.7; color:#333;">
+                                            <p style="margin:0 0 18px;">
+                                                그라디언트를 만들 때는 시작 색과 끝 색만 고르면 된다고 생각하기 쉽습니다. 하지만 두 색 사이를
+                                                어떤 색 공간에서 계산하느냐에 따라 중간 색은 꽤 다르게 보입니다. 기본값인 sRGB에서는 색이 중간에서
+                                                탁해질 수 있고, OKLCH에서는 예상하지 못한 밝은 색조를 지나갈 수도 있습니다. 어느 쪽이 늘 더 좋다기보다
+                                                화면의 의도에 맞는 경로를 고르는 일이 중요합니다.
+                                            </p>
+
+                                            <h4 style="margin:0 0 8px; font-size:14px; font-weight:700; color:#222;">
+                                                그라디언트의 색 공간을 직접 지정해 보기</h4>
+                                            <p style="margin:0 0 12px;">
+                                                CSS 그라디언트에는 <code>in oklch</code>처럼 보간할 색 공간을 지정할 수 있습니다.
+                                                예를 들어 <code>linear-gradient(in oklch, red, blue)</code>는 두 색 사이를 OKLCH에서
+                                                계산합니다.
+                                                Keith Grant의
+                                                <a href="https://post.spmailtechnol.com/f/a/gEJgJGWEnSKKsa2-Ai5iuw~~/AABEfhA~/zRakDQqYkrP3-kqOkrtU83i_8vLmzMi4igqMo_wa6aaHPBr1fS02ZYQ6CReh3KwjPR0JhbV9j278VC0TUBu26mgxbrV1jhqZiWsYuhMycGpJpWIs-cnKNkpCrbdb7-KjsG0JgQluMdbHOcn-M898LyaTbJJZRsmDOsqFIla64vqd0zJK94PhgnBAHWMdDVUF"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    style="color:#0b3cc1; text-decoration:underline;">그라디언트 색 공간
+                                                    가이드</a>는
+                                                같은 색 조합이 공간에 따라 어떻게 달라지는지 비교하기 좋습니다.
+                                            </p>
+                                            <p style="margin:0 0 18px;">
+                                                선택지는 <code>srgb</code>, <code>srgb-linear</code>,
+                                                <code>display-p3</code>,
+                                                <code>oklab</code>, <code>oklch</code>, <code>xyz</code> 등 다양합니다. 넓은 색
+                                                영역이
+                                                필요하다고 무조건 자연스러운 결과가 나오는 것은 아닙니다. 브랜드 색이나 상태 색처럼 정확한 인상이 중요한
+                                                경우에는 실제 그라디언트를 여러 화면에서 비교하고 필요한 위치에 중간 색상점을 추가하는 편이 안전합니다.
+                                            </p>
+
+                                            <h4 style="margin:0 0 8px; font-size:14px; font-weight:700; color:#222;">
+                                                OKLCH가 다루기 편한 이유</h4>
+                                            <p style="margin:0 0 12px;">
+                                                OKLCH는 밝기, 채도, 색조를 사람이 느끼는 차이에 가깝게 다루도록 설계된 색 모델입니다. 같은 밝기 값을
+                                                사용한 서로 다른 색조가 비교적 비슷한 밝기로 느껴져, 테마나 상태별 색상군을 만들 때 결과를 예측하기
+                                                쉽습니다. Jakub Krehel의
+                                                <a href="https://post.spmailtechnol.com/f/a/ouoMkrQ3z5van8l1Sqwkaw~~/AABEfhA~/5UVVBtmla0lWw5EQ01CO8GF9tNLwkB6f96FTTpmkUpqw-8Fg14o61oNMFYV9wU7fkdLxbPF_akKNwEnhVuWiFz3GCUGoNvTsA_-1R98S7-OiYoivlD4xer2q5fCg_NX9"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    style="color:#0b3cc1; text-decoration:underline;">OKLCH 설명</a>도
+                                                색을 코드로 조절할 때 왜 이런 특성이 유용한지 이해하는 데 도움이 됩니다.
+                                            </p>
+                                            <p style="margin:0 0 18px;">
+                                                익숙한 <code>hsl()</code>도 색조·채도·밝기를 나눠 다룰 수 있지만 기반 색 공간은 sRGB로
+                                                고정됩니다. <code>oklch()</code>는 비슷한 방식으로 값을 조절하면서 더 넓은 색 영역을 사용할 수 있다는
+                                                장점이 있습니다. 다만 넓은 색 영역 밖의 값이나 브라우저별 표현 차이를 고려해 핵심 텍스트와 UI 상태에는
+                                                충분한 대비가 유지되는지 함께 확인해야 합니다.
+                                            </p>
+
+                                            <h4 style="margin:0 0 8px; font-size:14px; font-weight:700; color:#222;">
+                                                색조가 지나가는 방향도 선택할 수 있습니다</h4>
+                                            <p style="margin:0 0 12px;">
+                                                원형으로 이어지는 색조는 같은 두 색 사이에도 두 방향이 존재합니다. CSS는 기본적으로 짧은 경로를 택하지만
+                                                <code>shorter hue</code>, <code>longer hue</code>,
+                                                <code>increasing hue</code>,
+                                                <code>decreasing hue</code>를 사용해 방향을 바꿀 수 있습니다.
+                                                <code>conic-gradient(in oklch longer hue, red, red)</code>처럼 같은 빨강에서
+                                                시작하고 끝내도
+                                                긴 경로를 지정하면 색상환 전체를 지나는 그라디언트를 만들 수 있습니다.
+                                            </p>
+                                            <p style="margin:0 0 18px;">
+                                                conic-gradient의 중심점을 옮기고 색상점을 같은 위치에 겹쳐 단단한 경계를 만들면 삼각형이나
+                                                부채꼴 같은 형태도 그릴 수 있습니다. 단순한 배경 효과를 넘어 차트, 컬러 피커, 각도 기반 장식처럼
+                                                방향성이 필요한 UI에 활용할 수 있지만, 복잡한 색 변화가 정보 전달을 방해하지 않는지도 살펴봐야 합니다.
+                                            </p>
+
+                                            <h4 style="margin:0 0 8px; font-size:14px; font-weight:700; color:#222;">
+                                                색상 도구는 결과보다 판단을 돕는 용도로</h4>
+                                            <p style="margin:0 0 12px;">
+                                                직접 여러 색 공간과 색상점을 조합하기 어렵다면
+                                                <a href="https://post.spmailtechnol.com/f/a/gUjMtY0nQv2iYUhCnwLKsQ~~/AABEfhA~/7TUKDU2Di2flzAxiHh9PWz1YhbsNgfud5TNN1XkZf3k4g8fiC70ZmmtTfbby_x3mFOhtAALwjaQ2YTsrLor9AzVofI7dPUp1Rt77M137ZI2YkXYFY0hrGbbQ2kmXsEPh"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    style="color:#0b3cc1; text-decoration:underline;">ColorFlow</a> 같은
+                                                메시 그라디언트 생성기를 출발점으로 사용할 수 있습니다. 여러 색의 위치와 혼합 결과를 빠르게 탐색하고,
+                                                마음에 드는 결과를 프로젝트의 토큰과 CSS로 옮기는 방식입니다.
+                                            </p>
+                                            <p style="margin:0 0 18px;">
+                                                팔레트 생성기는 완성된 답을 대신 정해 주기보다 선택지를 비교하는 도구에 가깝습니다. 브랜드의 분위기,
+                                                배경과 글자의 대비, 라이트·다크 테마에서의 변화까지 확인한 뒤 최종 색을 다듬어야 합니다. 특히 그라디언트는
+                                                양 끝의 색만 검사하지 말고 중간에 의도하지 않은 탁한 색이나 지나치게 밝은 색이 생기지 않는지 확인해 보세요.
+                                            </p>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 푸터 -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="860"
+                    style="width:860px; max-width:860px; border-collapse:collapse;">
+                    <tr>
+                        <td align="center" style="padding:12px 8px 32px; font-size:11px; line-height:1.6; color:#777;">
+                            작은 기준의 차이가 결과를 바꿉니다. 다음 뉴스레터에서 다시 뵙겠습니다.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
